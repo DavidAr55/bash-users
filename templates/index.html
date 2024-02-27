@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center mt-5">Servidor Linux/Debian 12</h1>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Formulario de Usuario
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <p style="color: green;">{{ message }}</p>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                    <div class="card-body">
+                        <form action="/add_contact" method="POST">
+                            <div class="form-group">
+                                <label for="username">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Introduce tu nombre de usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Introduce tu contraseña">
+                            </div>
+                            <div class="form-group">
+                                <label for="level">Nivel de Usuario Linux</label>
+                                <select class="form-control" id="level" name="level">
+                                    <option value="0">Usuario normal</option>
+                                    <option value="1">Usuario privilegiado</option>
+                                    <option value="2">Superusuario (root)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header">
+                        Tabla de Usuarios
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre de Usuario</th>
+                                        <th>Contraseña</th>
+                                        <th>Nivel de Usuario Linux</th>
+                                        <th>Creado</th>
+                                        <th>Actualizado</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Aquí se generarán las filas de la tabla con datos de la base de datos -->
+                                    {% for user in users %}
+                                    <tr>
+                                        <td>{{ user.0 }}</td>
+                                        <td>{{ user.1 }}</td>
+                                        <td>{{ user.2 }}</td>
+                                        <td>{{ user.3 }}</td>
+                                        <td>{{ user.4 }}</td>
+                                        <td>{{ user.5 }}</td>
+                                        <td style="display: flex;">
+                                            <a href="/edit/{{ user.0 }}" class="btn btn-primary mr-2">Editar</a>
+                                            <a href="/delete/{{ user.0 }}" class="btn btn-danger">Eliminar</a>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS (opcional, solo necesario si quieres utilizar componentes de Bootstrap que requieran JavaScript) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

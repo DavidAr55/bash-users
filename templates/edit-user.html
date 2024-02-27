@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center mt-5">Editar usuario</h1>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Formulario de Usuario
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <p style="color: green;">{{ message }}</p>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                    <div class="card-body">
+                        <form action="/update/{{ user.0 }}" method="POST">
+                            <div class="form-group">
+                                <label for="username">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Introduce tu nombre de usuario" value="{{ user.1 }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Introduce tu contraseña" value="{{ user.2 }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="level">Nivel de Usuario Linux</label>
+                                <select class="form-control" id="level" name="level">
+                                    <option value="0" {% if user.3 == '0' %} selected {% endif %}>Usuario normal</option>
+                                    <option value="1" {% if user.3 == '1' %} selected {% endif %}>Usuario privilegiado</option>
+                                    <option value="2" {% if user.3 == '2' %} selected {% endif %}>Superusuario (root)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional, solo necesario si quieres utilizar componentes de Bootstrap que requieran JavaScript) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
