@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+
+    {% include "components/head.html" %}
+
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        
+        .container-terminal {
+            width: 100%;
+            height: 100%;
+    
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .terminal {
+            display: grid;
+            margin: auto;
+            width: 80%;
+            height: 600px;
+            background-color: #272727;
+            color: lime;
+            font-family: monospace;
+            overflow-y: auto;
+            border-radius: 15px 15px 0 0;
+        }
+    
+        .container-input {
+            display: grid;
+            width: 80%;
+            margin: auto;
+        }
+    
+        .input-contain {
+            position: relative;
+        }
+    
+        input {
+            width: 100%;
+            height: 50px;
+            border-top: 1px solid white;
+            border-radius: 0 0 15px 15px;
+            background-color: #272727;
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+        }
+    
+        .placeholder-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 3px solid transparent;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+        }
+    
+        .text {
+            font-size: 18px;
+            padding: 0 0.5rem;
+            background-color: transparent;
+        }
+        
+        input,
+        .placeholder-text {
+            font-size: 18px;
+            padding: 0 14px;
+        }
+    
+        input:focus {
+            outline: none;
+            border-color: lime;
+        }
+    
+        input:focus + .placeholder-text .text,
+        input:not(:focus):not([value=""]) + .placeholder-text .text {
+            background-color: #272727;
+            font-size: 14px;
+            color: black;
+            transform: translate(0, -110%);
+            border-color: lime;
+        }
+    
+        .text {
+            transform: translate(0);
+            transition: transform 0.15s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
+        }
+    
+        input:focus + .placeholder-text .text,
+        input:not(:focus):not([value=""]) + .placeholder-text .text {
+            background-color: #272727;
+            font-size: 14px;
+            color: black;
+            transform: translate(0, -110%);
+        }
+        
+        input:focus + .placeholder-text .text {
+            border-color: lime;
+            color: lime;
+        }
+    </style>    
+
+    <script>
+        let input_element = document.querySelector("input");
+        let placeholder_text = document.querySelector(".placeholder-text");
+    
+        input_element.addEventListener("focus", () => {
+            placeholder_text.classList.add("focused");
+        });
+    
+        input_element.addEventListener("blur", () => {
+            if (!input_element.value) {
+                placeholder_text.classList.remove("focused");
+            }
+        });
+    
+        input_element.addEventListener("input", () => {
+            input_element.setAttribute("value", input_element.value);
+            if (input_element.value) {
+                placeholder_text.classList.add("focused");
+            } else {
+                placeholder_text.classList.remove("focused");
+            }
+        });
+    </script>
+    
+
+</head>
+<body>
+
+    {% include "components/nav.html" %}
+
+    <h1 class="text-center mt-5" style="color: green; font-weight: bold; font-family: 'Roboto Mono', monospace;">{{ session.user_name }}<span style="color: #8D8D8D;">@</span>flask-app<span style="color: #8D8D8D;">:~</span>$</h1>
+    <div class="container-terminal">
+        <div class="terminal" id="terminal"></div>
+        <div class="container-input">
+            <form action="/execute/bash/command" method="POST">
+                <div class="input-contain">
+                    <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+                    <label class="placeholder-text" for="fname" id="placeholder-fname">
+                       <div class="text"><span  style="color: lime; font-weight: bold; font-family: 'Roboto Mono', monospace;">{{ session.user_name }}<span style="color: white;">@</span>flask-app<span style="color: white;">:~</span>$</span></div>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

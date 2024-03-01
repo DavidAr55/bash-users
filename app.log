@@ -1,0 +1,64 @@
+2024-02-29 22:44:37,774 - WARNING -  * Debugger is active!
+2024-02-29 22:44:37,779 - INFO -  * Debugger PIN: 785-350-830
+2024-02-29 22:45:48,891 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
+2024-02-29 22:45:49,128 - INFO - Servidor iniciado
+2024-02-29 22:45:49,133 - WARNING -  * Debugger is active!
+2024-02-29 22:45:49,137 - INFO -  * Debugger PIN: 785-350-830
+2024-02-29 22:46:02,089 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:02] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2024-02-29 22:46:02,095 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:02] "GET /login HTTP/1.1" 200 -
+2024-02-29 22:46:07,702 - INFO - Intento de inicio de sesión de usuario: david
+2024-02-29 22:46:07,708 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:07] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-02-29 22:46:08,020 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:08] "GET /home HTTP/1.1" 200 -
+2024-02-29 22:53:19,381 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
+2024-02-29 22:53:19,617 - INFO - Servidor iniciado
+2024-02-29 22:53:19,622 - WARNING -  * Debugger is active!
+2024-02-29 22:53:19,626 - INFO -  * Debugger PIN: 785-350-830
+2024-02-29 22:53:41,622 - INFO - 127.0.0.1 - - [29/Feb/2024 22:53:41] "GET /edit/2 HTTP/1.1" 200 -
+2024-02-29 22:53:44,368 - INFO - Usuario "hot_taco" actualizado exitosamente
+2024-02-29 22:53:44,368 - INFO - 127.0.0.1 - - [29/Feb/2024 22:53:44] "[32mPOST /update/2 HTTP/1.1[0m" 302 -
+2024-02-29 22:53:44,378 - INFO - 127.0.0.1 - - [29/Feb/2024 22:53:44] "GET /home HTTP/1.1" 200 -
+2024-02-29 22:55:42,120 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
+2024-02-29 22:55:42,350 - INFO - Servidor iniciado
+2024-02-29 22:55:42,355 - WARNING -  * Debugger is active!
+2024-02-29 22:55:42,359 - INFO -  * Debugger PIN: 785-350-830
+2024-02-29 22:57:54,416 - INFO - 127.0.0.1 - - [29/Feb/2024 22:57:54] "GET /home HTTP/1.1" 200 -
+2024-02-29 22:57:55,420 - INFO - 127.0.0.1 - - [29/Feb/2024 22:57:55] "GET /logs HTTP/1.1" 200 -
+2024-02-29 22:59:00,574 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
+2024-02-29 22:59:00,804 - INFO - Servidor iniciado
+2024-02-29 22:59:00,809 - WARNING -  * Debugger is active!
+2024-02-29 22:59:00,813 - INFO -  * Debugger PIN: 785-350-830
+2024-02-29 22:59:13,021 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
+2024-02-29 22:59:13,255 - INFO - Servidor iniciado
+2024-02-29 22:59:13,260 - WARNING -  * Debugger is active!
+2024-02-29 22:59:13,264 - INFO -  * Debugger PIN: 785-350-830
+2024-02-29 22:59:23,816 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:23] "GET /home HTTP/1.1" 200 -
+2024-02-29 22:59:24,623 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:24] "GET /logs HTTP/1.1" 200 -
+2024-02-29 22:59:40,203 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:40] "GET /terminal HTTP/1.1" 200 -
+2024-02-29 22:59:42,713 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:42] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:00:53,520 - INFO - 127.0.0.1 - - [29/Feb/2024 23:00:53] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:01:23,805 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:23] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:01:29,880 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:29] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:01:30,592 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:30] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:01:40,350 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:40] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:01:42,609 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:42] "GET /terminal HTTP/1.1" 200 -
+2024-02-29 23:01:43,289 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:43] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:01:50,639 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:50] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:01:59,566 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:59] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:02:35,081 - INFO - 127.0.0.1 - - [29/Feb/2024 23:02:35] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:03:29,929 - INFO - 127.0.0.1 - - [29/Feb/2024 23:03:29] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:03:58,076 - INFO - 127.0.0.1 - - [29/Feb/2024 23:03:58] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:04:32,661 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:32] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:04:33,422 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:33] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:04:33,734 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:33] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:04:33,905 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:33] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:05:14,037 - INFO - 127.0.0.1 - - [29/Feb/2024 23:05:14] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:06:00,895 - INFO - 127.0.0.1 - - [29/Feb/2024 23:06:00] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:06:28,744 - INFO - 127.0.0.1 - - [29/Feb/2024 23:06:28] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:07:32,620 - INFO - 127.0.0.1 - - [29/Feb/2024 23:07:32] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:07:47,603 - INFO - 127.0.0.1 - - [29/Feb/2024 23:07:47] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:09:22,172 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
+2024-02-29 23:09:22,457 - INFO - Servidor iniciado
+2024-02-29 23:09:22,462 - WARNING -  * Debugger is active!
+2024-02-29 23:09:22,466 - INFO -  * Debugger PIN: 785-350-830
+2024-02-29 23:09:23,824 - INFO - 127.0.0.1 - - [29/Feb/2024 23:09:23] "GET /logs HTTP/1.1" 200 -
+2024-02-29 23:09:42,376 - INFO - 127.0.0.1 - - [29/Feb/2024 23:09:42] "GET /logs HTTP/1.1" 200 -

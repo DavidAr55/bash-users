@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs</title>
+
+    {% include "components/head.html" %}
+
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .console {
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #272727;
+            color: white;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            border-radius: 15px;
+        }
+
+        .console pre {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     
+    {% include "components/nav.html" %}
+
+    <h1 class="text-center mt-5">Logs from Linux/Debian 12</h1>
+    <div class="console">
+        <pre>
+            {% for line in log_content %}
+                {{ line|trim }}
+            {% endfor %}
+        </pre>
+    </div>
+</body>
+</html>
