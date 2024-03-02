@@ -10,6 +10,7 @@
     <style>
         body {
             padding-top: 56px;
+	    background: white;
         }
         
         .container-terminal {
@@ -108,6 +109,10 @@
             border-color: lime;
             color: lime;
         }
+
+	pre {
+	    color: white;
+	}
     </style>    
 
     <script>
@@ -132,19 +137,21 @@
                 placeholder_text.classList.remove("focused");
             }
         });
-    </script>
-    
+    </script>  
 
 </head>
 <body>
 
     {% include "components/nav.html" %}
 
-    <h1 class="text-center mt-5" style="color: green; font-weight: bold; font-family: 'Roboto Mono', monospace;">{{ session.user_name }}<span style="color: #8D8D8D;">@</span>flask-app<span style="color: #8D8D8D;">:~</span>$</h1>
     <div class="container-terminal">
-        <div class="terminal" id="terminal"></div>
-        <div class="container-input">
-            <form action="/execute/bash/command" method="POST">
+ 	<h1 class="text-center mt-5" style="color: green; font-weight: bold; font-family: 'Roboto Mono', monospace;">{{ session.user_name }}<span style="color: #8D8D8D;">@</span>flask-app<span style="color: #8D8D8D;">:~</span>$</h1>
+    	<div class="terminal" id="terminal">
+    	    {{ output | safe }}
+            <!-- Aquí se mostrará el output de la terminal -->
+    	</div>
+    	<div class="container-input">
+            <form id="commandForm">
                 <div class="input-contain">
                     <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
                     <label class="placeholder-text" for="fname" id="placeholder-fname">
@@ -156,5 +163,37 @@
     </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    	// Manejar el envío del formulario
+    	$('#commandForm').submit(function(e){
+            e.preventDefault(); // Evitar el comportamiento predeterminado de enviar el formulario
+	
+            // Obtener el comando ingresado por el usuario
+            var command = $('#fname').val();
+
+            // Enviar el comando al servidor usando AJAX
+            $.ajax({
+            	url: '/execute/bash/command',
+            	type: 'POST',
+            	data: {fname: command},
+            	success: function(response){
+                    // Mostrar el output en la terminal
+                    $('#terminal').html(response.output);
+		    $('#terminal').html(response.error);
+		
+                    // Limpiar el campo de entrada después de enviar el formulario
+                    $('#fname').val('');
+               	},
+            	error: function(xhr, status, error){
+                    // Manejar errores si ocurren
+                    console.error(error);
+            	}
+            });
+    	});
+    });
+
+</script>
 </body>
 </html>

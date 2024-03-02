@@ -1,64 +1,984 @@
-2024-02-29 22:44:37,774 - WARNING -  * Debugger is active!
-2024-02-29 22:44:37,779 - INFO -  * Debugger PIN: 785-350-830
-2024-02-29 22:45:48,891 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
-2024-02-29 22:45:49,128 - INFO - Servidor iniciado
-2024-02-29 22:45:49,133 - WARNING -  * Debugger is active!
-2024-02-29 22:45:49,137 - INFO -  * Debugger PIN: 785-350-830
-2024-02-29 22:46:02,089 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:02] "[32mPOST /logout HTTP/1.1[0m" 302 -
-2024-02-29 22:46:02,095 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:02] "GET /login HTTP/1.1" 200 -
-2024-02-29 22:46:07,702 - INFO - Intento de inicio de sesi�n de usuario: david
-2024-02-29 22:46:07,708 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:07] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
-2024-02-29 22:46:08,020 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:08] "GET /home HTTP/1.1" 200 -
-2024-02-29 22:53:19,381 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
-2024-02-29 22:53:19,617 - INFO - Servidor iniciado
-2024-02-29 22:53:19,622 - WARNING -  * Debugger is active!
-2024-02-29 22:53:19,626 - INFO -  * Debugger PIN: 785-350-830
-2024-02-29 22:53:41,622 - INFO - 127.0.0.1 - - [29/Feb/2024 22:53:41] "GET /edit/2 HTTP/1.1" 200 -
-2024-02-29 22:53:44,368 - INFO - Usuario "hot_taco" actualizado exitosamente
-2024-02-29 22:53:44,368 - INFO - 127.0.0.1 - - [29/Feb/2024 22:53:44] "[32mPOST /update/2 HTTP/1.1[0m" 302 -
-2024-02-29 22:53:44,378 - INFO - 127.0.0.1 - - [29/Feb/2024 22:53:44] "GET /home HTTP/1.1" 200 -
-2024-02-29 22:55:42,120 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
-2024-02-29 22:55:42,350 - INFO - Servidor iniciado
-2024-02-29 22:55:42,355 - WARNING -  * Debugger is active!
-2024-02-29 22:55:42,359 - INFO -  * Debugger PIN: 785-350-830
-2024-02-29 22:57:54,416 - INFO - 127.0.0.1 - - [29/Feb/2024 22:57:54] "GET /home HTTP/1.1" 200 -
-2024-02-29 22:57:55,420 - INFO - 127.0.0.1 - - [29/Feb/2024 22:57:55] "GET /logs HTTP/1.1" 200 -
-2024-02-29 22:59:00,574 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
-2024-02-29 22:59:00,804 - INFO - Servidor iniciado
-2024-02-29 22:59:00,809 - WARNING -  * Debugger is active!
-2024-02-29 22:59:00,813 - INFO -  * Debugger PIN: 785-350-830
-2024-02-29 22:59:13,021 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
-2024-02-29 22:59:13,255 - INFO - Servidor iniciado
-2024-02-29 22:59:13,260 - WARNING -  * Debugger is active!
-2024-02-29 22:59:13,264 - INFO -  * Debugger PIN: 785-350-830
-2024-02-29 22:59:23,816 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:23] "GET /home HTTP/1.1" 200 -
-2024-02-29 22:59:24,623 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:24] "GET /logs HTTP/1.1" 200 -
-2024-02-29 22:59:40,203 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:40] "GET /terminal HTTP/1.1" 200 -
-2024-02-29 22:59:42,713 - INFO - 127.0.0.1 - - [29/Feb/2024 22:59:42] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:00:53,520 - INFO - 127.0.0.1 - - [29/Feb/2024 23:00:53] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:01:23,805 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:23] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:01:29,880 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:29] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:01:30,592 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:30] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:01:40,350 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:40] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:01:42,609 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:42] "GET /terminal HTTP/1.1" 200 -
-2024-02-29 23:01:43,289 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:43] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:01:50,639 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:50] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:01:59,566 - INFO - 127.0.0.1 - - [29/Feb/2024 23:01:59] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:02:35,081 - INFO - 127.0.0.1 - - [29/Feb/2024 23:02:35] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:03:29,929 - INFO - 127.0.0.1 - - [29/Feb/2024 23:03:29] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:03:58,076 - INFO - 127.0.0.1 - - [29/Feb/2024 23:03:58] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:04:32,661 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:32] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:04:33,422 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:33] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:04:33,734 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:33] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:04:33,905 - INFO - 127.0.0.1 - - [29/Feb/2024 23:04:33] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:05:14,037 - INFO - 127.0.0.1 - - [29/Feb/2024 23:05:14] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:06:00,895 - INFO - 127.0.0.1 - - [29/Feb/2024 23:06:00] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:06:28,744 - INFO - 127.0.0.1 - - [29/Feb/2024 23:06:28] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:07:32,620 - INFO - 127.0.0.1 - - [29/Feb/2024 23:07:32] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:07:47,603 - INFO - 127.0.0.1 - - [29/Feb/2024 23:07:47] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:09:22,172 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
-2024-02-29 23:09:22,457 - INFO - Servidor iniciado
-2024-02-29 23:09:22,462 - WARNING -  * Debugger is active!
-2024-02-29 23:09:22,466 - INFO -  * Debugger PIN: 785-350-830
-2024-02-29 23:09:23,824 - INFO - 127.0.0.1 - - [29/Feb/2024 23:09:23] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:09:42,376 - INFO - 127.0.0.1 - - [29/Feb/2024 23:09:42] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:32:59,981 - INFO - Servidor iniciado
+2024-03-01 15:32:59,999 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:32:59,999 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:33:26,375 - INFO - 187.189.248.248 - - [01/Mar/2024 15:33:26] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 15:33:26,457 - INFO - 187.189.248.248 - - [01/Mar/2024 15:33:26] "GET /login HTTP/1.1" 200 -
+2024-03-01 15:33:32,699 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 15:33:32,701 - INFO - Inicio de sesión del usuario "david" completado de manera exitosa
+2024-03-01 15:33:32,702 - INFO - 187.189.248.248 - - [01/Mar/2024 15:33:32] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 15:33:32,788 - INFO - 187.189.248.248 - - [01/Mar/2024 15:33:32] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:34:22,518 - INFO - 187.189.248.248 - - [01/Mar/2024 15:34:22] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 15:34:24,314 - INFO - 187.189.248.248 - - [01/Mar/2024 15:34:24] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:39:34,709 - INFO - 187.189.248.248 - - [01/Mar/2024 15:39:34] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:40:30,737 - INFO - 187.189.248.248 - - [01/Mar/2024 15:40:30] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:40:34,068 - INFO - 187.189.248.248 - - [01/Mar/2024 15:40:34] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:43:44,553 - INFO - Servidor iniciado
+2024-03-01 15:43:44,564 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:43:44,564 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:43:50,224 - INFO - 187.189.248.248 - - [01/Mar/2024 15:43:50] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 15:43:53,555 - INFO - 187.189.248.248 - - [01/Mar/2024 15:43:53] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:49:07,420 - INFO - Servidor iniciado
+2024-03-01 15:49:07,440 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:49:07,440 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:49:14,069 - INFO - 187.189.248.248 - - [01/Mar/2024 15:49:14] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:49:15,697 - INFO - 187.189.248.248 - - [01/Mar/2024 15:49:15] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:49:27,191 - INFO - 187.189.248.248 - - [01/Mar/2024 15:49:27] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:51:11,260 - INFO - Servidor iniciado
+2024-03-01 15:51:11,271 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:51:11,271 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:51:14,234 - INFO - 187.189.248.248 - - [01/Mar/2024 15:51:14] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:52:08,562 - INFO - 187.189.248.248 - - [01/Mar/2024 15:52:08] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:52:12,863 - INFO - Servidor iniciado
+2024-03-01 15:52:12,879 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:52:12,879 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:52:14,611 - INFO - 187.189.248.248 - - [01/Mar/2024 15:52:14] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:53:38,044 - INFO - Servidor iniciado
+2024-03-01 15:53:38,055 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:53:38,055 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:53:41,234 - INFO - 187.189.248.248 - - [01/Mar/2024 15:53:41] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:53:43,809 - INFO - 187.189.248.248 - - [01/Mar/2024 15:53:43] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:54:13,152 - INFO - Servidor iniciado
+2024-03-01 15:54:13,163 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:54:13,163 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:54:16,006 - INFO - 187.189.248.248 - - [01/Mar/2024 15:54:16] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:54:18,455 - ERROR - Error en la vista de logs: 'builtin_function_or_method' object has no attribute 'reverse'
+2024-03-01 15:54:18,455 - INFO - 187.189.248.248 - - [01/Mar/2024 15:54:18] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:54:56,278 - INFO - Servidor iniciado
+2024-03-01 15:54:56,289 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:54:56,289 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:54:59,953 - INFO - 187.189.248.248 - - [01/Mar/2024 15:54:59] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:55:02,631 - ERROR - Error en la vista de logs: 'str' object has no attribute 'reverse'
+2024-03-01 15:55:02,632 - INFO - 187.189.248.248 - - [01/Mar/2024 15:55:02] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:55:44,654 - INFO - Servidor iniciado
+2024-03-01 15:55:44,667 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:55:44,667 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:55:48,244 - INFO - 187.189.248.248 - - [01/Mar/2024 15:55:48] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:55:50,725 - INFO - 187.189.248.248 - - [01/Mar/2024 15:55:50] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:56:32,513 - INFO - Servidor iniciado
+2024-03-01 15:56:32,525 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:56:32,525 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:56:34,607 - INFO - 187.189.248.248 - - [01/Mar/2024 15:56:34] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:56:36,494 - INFO - 187.189.248.248 - - [01/Mar/2024 15:56:36] "GET /logs HTTP/1.1" 200 -
+2024-03-01 15:59:11,774 - INFO - Servidor iniciado
+2024-03-01 15:59:11,789 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 15:59:11,789 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 15:59:14,626 - INFO - 187.189.248.248 - - [01/Mar/2024 15:59:14] "GET /home HTTP/1.1" 200 -
+2024-03-01 15:59:18,772 - INFO - 187.189.248.248 - - [01/Mar/2024 15:59:18] "GET /logs HTTP/1.1" 200 -
+2024-03-01 16:22:00,549 - INFO - Servidor iniciado
+2024-03-01 16:22:00,564 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:22:00,564 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:26:31,907 - INFO - Servidor iniciado
+2024-03-01 16:26:31,919 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:26:31,919 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:26:37,452 - INFO - 187.189.248.248 - - [01/Mar/2024 16:26:37] "GET /home HTTP/1.1" 200 -
+2024-03-01 16:26:41,335 - INFO - 187.189.248.248 - - [01/Mar/2024 16:26:41] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 16:27:42,038 - INFO - Servidor iniciado
+2024-03-01 16:27:42,053 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:27:42,053 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:27:45,554 - INFO - 187.189.248.248 - - [01/Mar/2024 16:27:45] "GET /home HTTP/1.1" 200 -
+2024-03-01 16:27:48,442 - INFO - 187.189.248.248 - - [01/Mar/2024 16:27:48] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 16:29:05,514 - INFO - Servidor iniciado
+2024-03-01 16:29:05,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:29:05,528 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:29:08,538 - INFO - 187.189.248.248 - - [01/Mar/2024 16:29:08] "GET /home HTTP/1.1" 200 -
+2024-03-01 16:29:12,197 - INFO - 187.189.248.248 - - [01/Mar/2024 16:29:12] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 16:29:57,686 - INFO - 69.164.217.245 - - [01/Mar/2024 16:29:57] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 16:32:59,414 - INFO - Servidor iniciado
+2024-03-01 16:32:59,426 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:32:59,426 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:33:05,771 - INFO - 187.189.248.248 - - [01/Mar/2024 16:33:05] "GET /home HTTP/1.1" 200 -
+2024-03-01 16:33:07,056 - INFO - 187.189.248.248 - - [01/Mar/2024 16:33:07] "[33mGET /homr HTTP/1.1[0m" 404 -
+2024-03-01 16:33:09,706 - INFO - 187.189.248.248 - - [01/Mar/2024 16:33:09] "GET /home HTTP/1.1" 200 -
+2024-03-01 16:33:14,446 - INFO - 187.189.248.248 - - [01/Mar/2024 16:33:14] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 16:34:06,687 - INFO - Servidor iniciado
+2024-03-01 16:34:06,699 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:34:06,699 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:34:20,332 - INFO - 187.189.248.248 - - [01/Mar/2024 16:34:20] "GET /home HTTP/1.1" 200 -
+2024-03-01 16:34:22,801 - INFO - 187.189.248.248 - - [01/Mar/2024 16:34:22] "GET /home HTTP/1.1" 200 -
+2024-03-01 16:34:25,954 - INFO - 187.189.248.248 - - [01/Mar/2024 16:34:25] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 16:37:30,542 - INFO - 104.140.188.22 - - [01/Mar/2024 16:37:30] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 16:37:30,885 - INFO - 104.140.188.22 - - [01/Mar/2024 16:37:30] "GET /login HTTP/1.1" 200 -
+2024-03-01 16:50:56,837 - INFO - 45.79.163.53 - - [01/Mar/2024 16:50:56] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 16:51:31,898 - INFO - 172.104.11.46 - - [01/Mar/2024 16:51:31] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 16:57:39,344 - INFO - Servidor iniciado
+2024-03-01 16:57:39,360 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:57:39,360 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:57:41,580 - INFO - 187.189.248.248 - - [01/Mar/2024 16:57:41] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 16:58:23,565 - INFO - Servidor iniciado
+2024-03-01 16:58:23,577 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 16:58:23,577 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:58:25,502 - INFO - 187.189.248.248 - - [01/Mar/2024 16:58:25] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:02:02,511 - INFO - Servidor iniciado
+2024-03-01 17:02:02,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:02:02,528 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:02:06,367 - INFO - 187.189.248.248 - - [01/Mar/2024 17:02:06] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:04:26,387 - INFO - Servidor iniciado
+2024-03-01 17:04:26,410 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:04:26,410 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:04:30,606 - INFO - 187.189.248.248 - - [01/Mar/2024 17:04:30] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:04:36,576 - INFO - 187.189.248.248 - - [01/Mar/2024 17:04:36] "GET /home HTTP/1.1" 200 -
+2024-03-01 17:04:41,316 - INFO - 187.189.248.248 - - [01/Mar/2024 17:04:41] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:05:49,999 - INFO - Servidor iniciado
+2024-03-01 17:05:50,012 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:05:50,012 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:05:53,079 - INFO - 187.189.248.248 - - [01/Mar/2024 17:05:53] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:15:38,061 - INFO - Servidor iniciado
+2024-03-01 17:15:38,076 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:15:38,076 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:15:41,782 - INFO - 187.189.248.248 - - [01/Mar/2024 17:15:41] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:15:46,798 - INFO - 187.189.248.248 - - [01/Mar/2024 17:15:46] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:15:54,766 - INFO - 187.189.248.248 - - [01/Mar/2024 17:15:54] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:16:08,315 - INFO - 187.189.248.248 - - [01/Mar/2024 17:16:08] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:16:12,985 - INFO - 187.189.248.248 - - [01/Mar/2024 17:16:12] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:16:29,842 - INFO - 187.189.248.248 - - [01/Mar/2024 17:16:29] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:16:44,261 - INFO - 187.189.248.248 - - [01/Mar/2024 17:16:44] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:17:26,754 - INFO - Servidor iniciado
+2024-03-01 17:17:26,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:17:26,767 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:17:28,088 - INFO - 187.189.248.248 - - [01/Mar/2024 17:17:28] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:17:32,168 - INFO - 187.189.248.248 - - [01/Mar/2024 17:17:32] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:19:13,657 - INFO - 187.189.248.248 - - [01/Mar/2024 17:19:13] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:19:58,574 - INFO - 187.189.248.248 - - [01/Mar/2024 17:19:58] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:20:02,595 - INFO - 187.189.248.248 - - [01/Mar/2024 17:20:02] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:22:06,528 - INFO - 187.189.248.248 - - [01/Mar/2024 17:22:06] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:22:10,737 - INFO - Servidor iniciado
+2024-03-01 17:22:10,752 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:22:10,752 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:22:12,351 - INFO - 187.189.248.248 - - [01/Mar/2024 17:22:12] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:25:08,890 - INFO - 187.189.248.248 - - [01/Mar/2024 17:25:08] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:25:11,979 - INFO - Servidor iniciado
+2024-03-01 17:25:11,993 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:25:11,993 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:25:13,559 - INFO - 187.189.248.248 - - [01/Mar/2024 17:25:13] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:26:48,593 - INFO - Servidor iniciado
+2024-03-01 17:26:48,607 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:26:48,607 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:26:50,222 - INFO - 187.189.248.248 - - [01/Mar/2024 17:26:50] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:27:55,477 - INFO - Servidor iniciado
+2024-03-01 17:27:55,495 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:27:55,495 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:27:56,951 - INFO - 187.189.248.248 - - [01/Mar/2024 17:27:56] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:28:00,645 - INFO - 187.189.248.248 - - [01/Mar/2024 17:28:00] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:29:05,499 - INFO - 187.189.248.248 - - [01/Mar/2024 17:29:05] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:29:08,367 - INFO - 187.189.248.248 - - [01/Mar/2024 17:29:08] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:29:13,322 - INFO - Servidor iniciado
+2024-03-01 17:29:13,336 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:29:13,336 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:29:14,922 - INFO - 187.189.248.248 - - [01/Mar/2024 17:29:14] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:29:19,460 - INFO - 187.189.248.248 - - [01/Mar/2024 17:29:19] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:33:03,025 - INFO - Servidor iniciado
+2024-03-01 17:33:03,038 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:33:03,038 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:33:06,533 - INFO - 187.189.248.248 - - [01/Mar/2024 17:33:06] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:33:08,986 - INFO - 187.189.248.248 - - [01/Mar/2024 17:33:08] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:35:03,604 - INFO - Servidor iniciado
+2024-03-01 17:35:03,617 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:35:03,617 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:35:06,123 - INFO - 187.189.248.248 - - [01/Mar/2024 17:35:06] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:35:08,954 - INFO - 187.189.248.248 - - [01/Mar/2024 17:35:08] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:38:10,375 - INFO - 35.203.210.123 - - [01/Mar/2024 17:38:10] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 17:38:10,647 - INFO - 35.203.210.123 - - [01/Mar/2024 17:38:10] "GET /login HTTP/1.1" 200 -
+2024-03-01 17:39:45,156 - INFO - Servidor iniciado
+2024-03-01 17:39:45,167 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:39:45,167 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:39:47,864 - INFO - 187.189.248.248 - - [01/Mar/2024 17:39:47] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:39:50,702 - INFO - 187.189.248.248 - - [01/Mar/2024 17:39:50] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:40:08,821 - INFO - 187.189.248.248 - - [01/Mar/2024 17:40:08] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:40:30,103 - INFO - 187.189.248.248 - - [01/Mar/2024 17:40:30] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:41:33,586 - INFO - 187.189.248.248 - - [01/Mar/2024 17:41:33] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:41:57,781 - INFO - 187.189.248.248 - - [01/Mar/2024 17:41:57] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:42:00,934 - INFO - 187.189.248.248 - - [01/Mar/2024 17:42:00] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:42:21,391 - INFO - 187.189.248.248 - - [01/Mar/2024 17:42:21] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:47:54,305 - INFO - Servidor iniciado
+2024-03-01 17:47:54,320 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:47:54,320 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:47:57,116 - INFO - 187.189.248.248 - - [01/Mar/2024 17:47:57] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:47:59,336 - INFO - 187.189.248.248 - - [01/Mar/2024 17:47:59] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:48:17,667 - INFO - 187.189.248.248 - - [01/Mar/2024 17:48:17] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:48:23,560 - INFO - 187.189.248.248 - - [01/Mar/2024 17:48:23] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:48:29,272 - INFO - 187.189.248.248 - - [01/Mar/2024 17:48:29] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:49:11,763 - INFO - 91.92.254.23 - - [01/Mar/2024 17:49:11] "[33mPOST /boaform/admin/formLogin HTTP/1.1[0m" 404 -
+2024-03-01 17:49:12,063 - INFO - 91.92.254.23 - - [01/Mar/2024 17:49:12] "[33mPOST /boaform/admin/formLogin HTTP/1.1[0m" 404 -
+2024-03-01 17:49:12,375 - INFO - 91.92.254.23 - - [01/Mar/2024 17:49:12] "[33mPOST /boaform/admin/formLogin HTTP/1.1[0m" 404 -
+2024-03-01 17:49:12,720 - INFO - 91.92.254.23 - - [01/Mar/2024 17:49:12] "[33mPOST /boaform/admin/formLogin HTTP/1.1[0m" 404 -
+2024-03-01 17:49:13,006 - INFO - 91.92.254.23 - - [01/Mar/2024 17:49:13] "[33mPOST /boaform/admin/formLogin HTTP/1.1[0m" 404 -
+2024-03-01 17:49:13,349 - INFO - 91.92.254.23 - - [01/Mar/2024 17:49:13] "[33mPOST /boaform/admin/formLogin HTTP/1.1[0m" 404 -
+2024-03-01 17:49:13,623 - INFO - 91.92.254.23 - - [01/Mar/2024 17:49:13] "[33mPOST /boaform/admin/formPing6 HTTP/1.1[0m" 404 -
+2024-03-01 17:51:12,127 - INFO - Servidor iniciado
+2024-03-01 17:51:12,138 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:51:12,138 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:51:14,581 - INFO - 187.189.248.248 - - [01/Mar/2024 17:51:14] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:51:18,969 - INFO - 187.189.248.248 - - [01/Mar/2024 17:51:18] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:51:25,155 - INFO - 187.189.248.248 - - [01/Mar/2024 17:51:25] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:51:41,601 - INFO - 187.189.248.248 - - [01/Mar/2024 17:51:41] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:51:42,379 - INFO - 187.189.248.248 - - [01/Mar/2024 17:51:42] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:52:02,367 - INFO - 187.189.248.248 - - [01/Mar/2024 17:52:02] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:52:16,141 - INFO - 187.189.248.248 - - [01/Mar/2024 17:52:16] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:58:16,766 - INFO - Servidor iniciado
+2024-03-01 17:58:16,779 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 17:58:16,779 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:58:20,345 - INFO - 187.189.248.248 - - [01/Mar/2024 17:58:20] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 17:58:23,408 - INFO - 187.189.248.248 - - [01/Mar/2024 17:58:23] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:58:32,371 - INFO - 187.189.248.248 - - [01/Mar/2024 17:58:32] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:58:37,127 - INFO - 187.189.248.248 - - [01/Mar/2024 17:58:37] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 17:59:10,456 - INFO - 187.189.248.248 - - [01/Mar/2024 17:59:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 17:59:23,284 - INFO - 187.189.248.248 - - [01/Mar/2024 17:59:23] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:01:11,230 - INFO - 187.189.248.248 - - [01/Mar/2024 18:01:11] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:01:13,919 - INFO - 187.189.248.248 - - [01/Mar/2024 18:01:13] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:01:20,863 - INFO - 187.189.248.248 - - [01/Mar/2024 18:01:20] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:04:01,561 - INFO - Servidor iniciado
+2024-03-01 18:06:05,208 - INFO - Servidor iniciado
+2024-03-01 18:06:05,211 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:06:05,211 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:06:12,446 - INFO - 187.189.248.248 - - [01/Mar/2024 18:06:12] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:06:15,006 - INFO - 187.189.248.248 - - [01/Mar/2024 18:06:15] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:06:26,179 - INFO - 187.189.248.248 - - [01/Mar/2024 18:06:26] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:06:45,056 - INFO - 187.189.248.248 - - [01/Mar/2024 18:06:45] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:13:41,058 - INFO - Servidor iniciado
+2024-03-01 18:13:41,070 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:13:41,070 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:13:48,582 - INFO - 187.189.248.248 - - [01/Mar/2024 18:13:48] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:13:51,172 - INFO - 187.189.248.248 - - [01/Mar/2024 18:13:51] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:13:56,915 - INFO - 187.189.248.248 - - [01/Mar/2024 18:13:56] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:13:59,527 - INFO - 187.189.248.248 - - [01/Mar/2024 18:13:59] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:16:09,478 - INFO - Servidor iniciado
+2024-03-01 18:16:09,490 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:16:09,490 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:16:10,708 - ERROR - 192.155.88.231 - - [01/Mar/2024 18:16:10] code 400, message Bad request syntax ('*1')
+2024-03-01 18:16:10,708 - INFO - 192.155.88.231 - - [01/Mar/2024 18:16:10] "[31m[1m*1[0m" 400 -
+2024-03-01 18:16:13,389 - INFO - 187.189.248.248 - - [01/Mar/2024 18:16:13] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:16:14,102 - INFO - 187.189.248.248 - - [01/Mar/2024 18:16:14] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:16:17,067 - ERROR - Exception on /logout [POST]
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/app.py", line 62, in logout
+    logging.info('Cierre de sesión de: %s', session['user_name'])
+                                            ~~~~~~~^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/sessions.py", line 84, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'user_name'
+2024-03-01 18:16:17,070 - INFO - 187.189.248.248 - - [01/Mar/2024 18:16:17] "[35m[1mPOST /logout HTTP/1.1[0m" 500 -
+2024-03-01 18:16:43,729 - ERROR - Exception on /logout [POST]
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/app.py", line 62, in logout
+    logging.info('Cierre de sesión de: %s', session['user_name'])
+                                            ~~~~~~~^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/sessions.py", line 84, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'user_name'
+2024-03-01 18:16:43,730 - INFO - 187.189.248.248 - - [01/Mar/2024 18:16:43] "[35m[1mPOST /logout HTTP/1.1[0m" 500 -
+2024-03-01 18:16:48,052 - INFO - 172.105.128.13 - - [01/Mar/2024 18:16:48] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 18:17:10,680 - INFO - Servidor iniciado
+2024-03-01 18:17:10,694 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:17:10,694 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:18:06,295 - INFO - Servidor iniciado
+2024-03-01 18:18:06,308 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:18:06,308 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:18:09,664 - ERROR - Exception on /logout [POST]
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/app.py", line 62, in logout
+    logging.info('Cierre de sesión de: %s', session['user_name'])
+                                            ~~~~~~~^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/sessions.py", line 84, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'user_name'
+2024-03-01 18:18:09,667 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:09] "[35m[1mPOST /logout HTTP/1.1[0m" 500 -
+2024-03-01 18:18:11,800 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:11] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:18:11,902 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:11] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:18:20,984 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:20] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:18:21,096 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:21] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:18:27,100 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 18:18:27,101 - INFO - Inicio de sesión del usuario "david" completado de manera exitosa
+2024-03-01 18:18:27,101 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:27] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 18:18:27,185 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:27] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:18:29,681 - ERROR - Exception on /logout [POST]
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/app.py", line 62, in logout
+    logging.info('Cierre de sesión de: %s', session['user_name'])
+                                            ~~~~~~~^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/sessions.py", line 84, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'user_name'
+2024-03-01 18:18:29,682 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:29] "[35m[1mPOST /logout HTTP/1.1[0m" 500 -
+2024-03-01 18:18:32,657 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:32] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:18:32,755 - INFO - 187.189.248.248 - - [01/Mar/2024 18:18:32] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:20:01,661 - INFO - Servidor iniciado
+2024-03-01 18:20:01,675 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:20:01,675 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:20:04,750 - INFO - 187.189.248.248 - - [01/Mar/2024 18:20:04] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:20:07,685 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 18:20:07,687 - INFO - Inicio de sesión del usuario "david" completado de manera exitosa
+2024-03-01 18:20:07,689 - INFO - 187.189.248.248 - - [01/Mar/2024 18:20:07] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 18:20:07,777 - INFO - 187.189.248.248 - - [01/Mar/2024 18:20:07] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:20:10,555 - ERROR - Exception on /logout [POST]
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/app.py", line 62, in logout
+    logging.info('Cierre de sesión de: %s', session['user_name'])
+                                            ~~~~~~~^^^^^^^^^^^^^
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/flask/sessions.py", line 84, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'user_name'
+2024-03-01 18:20:10,558 - INFO - 187.189.248.248 - - [01/Mar/2024 18:20:10] "[35m[1mPOST /logout HTTP/1.1[0m" 500 -
+2024-03-01 18:20:15,012 - INFO - 187.189.248.248 - - [01/Mar/2024 18:20:15] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:20:15,113 - INFO - 187.189.248.248 - - [01/Mar/2024 18:20:15] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:23:24,813 - INFO - Servidor iniciado
+2024-03-01 18:23:24,835 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:23:24,836 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:23:24,837 - INFO -  * Restarting with stat
+2024-03-01 18:23:24,958 - INFO - Servidor iniciado
+2024-03-01 18:23:24,960 - WARNING -  * Debugger is active!
+2024-03-01 18:23:25,021 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 18:23:28,980 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:28] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:23:32,204 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 18:23:32,206 - INFO - Inicio de sesión del usuario "david" completado de manera exitosa
+2024-03-01 18:23:32,206 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:32] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 18:23:32,292 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:32] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:23:34,461 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:34] "[35m[1mPOST /logout HTTP/1.1[0m" 500 -
+2024-03-01 18:23:34,636 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:34] "GET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-01 18:23:34,699 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:34] "GET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-03-01 18:23:34,860 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:34] "GET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-03-01 18:23:35,018 - INFO - 187.189.248.248 - - [01/Mar/2024 18:23:35] "[36mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-01 18:24:49,023 - INFO - Servidor iniciado
+2024-03-01 18:24:49,040 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:24:49,040 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:24:49,041 - INFO -  * Restarting with stat
+2024-03-01 18:24:49,171 - INFO - Servidor iniciado
+2024-03-01 18:24:49,174 - WARNING -  * Debugger is active!
+2024-03-01 18:24:49,174 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 18:24:53,073 - INFO - Cierre de sesión de: david
+2024-03-01 18:24:53,073 - INFO - 187.189.248.248 - - [01/Mar/2024 18:24:53] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2024-03-01 18:24:53,158 - INFO - 187.189.248.248 - - [01/Mar/2024 18:24:53] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:24:56,594 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 18:24:56,595 - INFO - Inicio de sesión del usuario "david" completado de manera exitosa
+2024-03-01 18:24:56,596 - INFO - 187.189.248.248 - - [01/Mar/2024 18:24:56] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 18:24:56,685 - INFO - 187.189.248.248 - - [01/Mar/2024 18:24:56] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:24:59,086 - INFO - Cierre de sesión de: david
+2024-03-01 18:24:59,087 - INFO - 187.189.248.248 - - [01/Mar/2024 18:24:59] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2024-03-01 18:24:59,167 - INFO - 187.189.248.248 - - [01/Mar/2024 18:24:59] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:25:02,811 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 18:25:02,812 - INFO - Inicio de sesión del usuario "david" completado de manera exitosa
+2024-03-01 18:25:02,812 - INFO - 187.189.248.248 - - [01/Mar/2024 18:25:02] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 18:25:02,894 - INFO - 187.189.248.248 - - [01/Mar/2024 18:25:02] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:25:36,166 - INFO - 187.189.248.248 - - [01/Mar/2024 18:25:36] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:25:41,442 - INFO - 187.189.248.248 - - [01/Mar/2024 18:25:41] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:25:43,690 - INFO - 187.189.248.248 - - [01/Mar/2024 18:25:43] "GET /logs HTTP/1.1" 200 -
+2024-03-01 18:25:56,437 - INFO - 187.189.248.248 - - [01/Mar/2024 18:25:56] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:26:31,701 - INFO - Servidor iniciado
+2024-03-01 18:28:31,740 - INFO - Servidor iniciado
+2024-03-01 18:28:31,750 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 18:28:31,750 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:28:31,750 - INFO -  * Restarting with stat
+2024-03-01 18:28:31,874 - INFO - Servidor iniciado
+2024-03-01 18:28:31,876 - WARNING -  * Debugger is active!
+2024-03-01 18:28:31,877 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 18:28:34,590 - INFO - 187.189.248.248 - - [01/Mar/2024 18:28:34] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:28:38,269 - INFO - 187.189.248.248 - - [01/Mar/2024 18:28:38] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:28:40,354 - INFO - 187.189.248.248 - - [01/Mar/2024 18:28:40] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:28:44,389 - INFO - 187.189.248.248 - - [01/Mar/2024 18:28:44] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 18:29:02,426 - INFO - 200.68.167.54 - - [01/Mar/2024 18:29:02] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:29:11,048 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 18:29:11,049 - INFO - Inicio de sesión del usuario "david" completado de manera exitosa
+2024-03-01 18:29:11,049 - INFO - 200.68.167.54 - - [01/Mar/2024 18:29:11] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 18:29:11,626 - INFO - 200.68.167.54 - - [01/Mar/2024 18:29:11] "GET /home HTTP/1.1" 200 -
+2024-03-01 18:29:29,544 - INFO - 200.68.167.54 - - [01/Mar/2024 18:29:29] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:29:36,981 - INFO - 187.189.248.248 - - [01/Mar/2024 18:29:36] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 18:41:14,684 - INFO - 45.79.181.94 - - [01/Mar/2024 18:41:14] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 18:45:57,693 - INFO - 103.227.118.33 - - [01/Mar/2024 18:45:57] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 18:47:01,798 - INFO - 162.142.125.216 - - [01/Mar/2024 18:47:01] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 18:47:04,949 - INFO - 162.142.125.216 - - [01/Mar/2024 18:47:04] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 18:47:05,089 - ERROR - 162.142.125.216 - - [01/Mar/2024 18:47:05] code 505, message Invalid HTTP version (2.0)
+2024-03-01 18:47:05,089 - INFO - 162.142.125.216 - - [01/Mar/2024 18:47:05] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+2024-03-01 18:47:08,268 - INFO - 162.142.125.216 - - [01/Mar/2024 18:47:08] "GET /login HTTP/1.1" 200 -
+2024-03-01 18:47:08,382 - ERROR - 162.142.125.216 - - [01/Mar/2024 18:47:08] code 505, message Invalid HTTP version (2.0)
+2024-03-01 18:47:08,382 - INFO - 162.142.125.216 - - [01/Mar/2024 18:47:08] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+2024-03-01 18:47:08,479 - INFO - 162.142.125.216 - - [01/Mar/2024 18:47:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 18:53:25,143 - INFO - 45.79.181.94 - - [01/Mar/2024 18:53:25] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 19:13:13,321 - INFO - 52.81.239.40 - - [01/Mar/2024 19:13:13] "[33mGET /.DS_Store HTTP/1.1[0m" 404 -
+2024-03-01 20:00:51,402 - INFO - 187.189.248.248 - - [01/Mar/2024 20:00:51] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:05:28,303 - INFO - 187.189.248.248 - - [01/Mar/2024 20:05:28] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 20:05:34,370 - INFO - 187.189.248.248 - - [01/Mar/2024 20:05:34] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 20:05:43,121 - INFO - 187.189.248.248 - - [01/Mar/2024 20:05:43] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 20:07:47,325 - INFO - 187.189.248.248 - - [01/Mar/2024 20:07:47] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 20:10:27,930 - INFO - 146.19.24.28 - - [01/Mar/2024 20:10:27] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 20:13:38,624 - ERROR - 172.105.128.11 - - [01/Mar/2024 20:13:38] code 400, message Bad request version ('À\x14À')
+2024-03-01 20:13:38,624 - INFO - 172.105.128.11 - - [01/Mar/2024 20:13:38] "[31m[1m\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x03¼Ï£s%~©\x91!»1×\x08¦ 'ÚÐiL#hL\x15\x15\x94ÉQ³qóX\x00\x00 À/À0À+À,Ì¨Ì©À\x13À\x09À\x14À[0m" 400 -
+2024-03-01 20:13:53,566 - INFO - 149.50.105.76 - - [01/Mar/2024 20:13:53] "[33mGET /.env HTTP/1.1[0m" 404 -
+2024-03-01 20:18:15,543 - INFO - Servidor iniciado
+2024-03-01 20:18:15,563 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 20:18:15,563 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 20:18:15,563 - INFO -  * Restarting with stat
+2024-03-01 20:18:15,692 - INFO - Servidor iniciado
+2024-03-01 20:18:15,695 - WARNING -  * Debugger is active!
+2024-03-01 20:18:15,695 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 20:18:20,087 - INFO - 187.189.248.248 - - [01/Mar/2024 20:18:20] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 20:18:21,810 - INFO - 187.189.248.248 - - [01/Mar/2024 20:18:21] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:19:08,157 - INFO - 187.189.248.248 - - [01/Mar/2024 20:19:08] "[35m[1mGET /delete/2 HTTP/1.1[0m" 500 -
+2024-03-01 20:19:08,328 - INFO - 187.189.248.248 - - [01/Mar/2024 20:19:08] "GET /delete/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-03-01 20:19:08,393 - INFO - 187.189.248.248 - - [01/Mar/2024 20:19:08] "GET /delete/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-03-01 20:19:08,554 - INFO - 187.189.248.248 - - [01/Mar/2024 20:19:08] "GET /delete/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-03-01 20:19:08,712 - INFO - 187.189.248.248 - - [01/Mar/2024 20:19:08] "[36mGET /delete/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-03-01 20:20:54,942 - INFO -  * Detected change in '/home/a21110121/bash-users/app.py', reloading
+2024-03-01 20:20:54,968 - INFO -  * Restarting with stat
+2024-03-01 20:20:55,091 - INFO - Servidor iniciado
+2024-03-01 20:20:55,093 - WARNING -  * Debugger is active!
+2024-03-01 20:20:55,094 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 20:20:57,052 - INFO - Servidor iniciado
+2024-03-01 20:20:57,072 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 20:20:57,072 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 20:20:57,073 - INFO -  * Restarting with stat
+2024-03-01 20:20:57,198 - INFO - Servidor iniciado
+2024-03-01 20:20:57,201 - WARNING -  * Debugger is active!
+2024-03-01 20:20:57,201 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 20:20:59,742 - INFO - El usuario con id "2" fue eliminado de manera exitosa
+2024-03-01 20:20:59,743 - INFO - 187.189.248.248 - - [01/Mar/2024 20:20:59] "[32mGET /delete/2 HTTP/1.1[0m" 302 -
+2024-03-01 20:20:59,831 - INFO - 187.189.248.248 - - [01/Mar/2024 20:20:59] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:21:04,460 - INFO - El usuario con id "7" fue eliminado de manera exitosa
+2024-03-01 20:21:04,461 - INFO - 187.189.248.248 - - [01/Mar/2024 20:21:04] "[32mGET /delete/7 HTTP/1.1[0m" 302 -
+2024-03-01 20:21:04,544 - INFO - 187.189.248.248 - - [01/Mar/2024 20:21:04] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:21:07,046 - INFO - El usuario con id "8" fue eliminado de manera exitosa
+2024-03-01 20:21:07,047 - INFO - 187.189.248.248 - - [01/Mar/2024 20:21:07] "[32mGET /delete/8 HTTP/1.1[0m" 302 -
+2024-03-01 20:21:07,132 - INFO - 187.189.248.248 - - [01/Mar/2024 20:21:07] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:21:09,735 - INFO - El usuario con id "9" fue eliminado de manera exitosa
+2024-03-01 20:21:09,736 - INFO - 187.189.248.248 - - [01/Mar/2024 20:21:09] "[32mGET /delete/9 HTTP/1.1[0m" 302 -
+2024-03-01 20:21:09,818 - INFO - 187.189.248.248 - - [01/Mar/2024 20:21:09] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:24:19,425 - INFO - Servidor iniciado
+2024-03-01 20:24:19,444 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 20:24:19,444 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 20:24:19,445 - INFO -  * Restarting with stat
+2024-03-01 20:24:19,572 - INFO - Servidor iniciado
+2024-03-01 20:24:19,574 - WARNING -  * Debugger is active!
+2024-03-01 20:24:19,575 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 20:24:23,934 - INFO - 187.189.248.248 - - [01/Mar/2024 20:24:23] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:26:27,582 - INFO - 187.189.248.248 - - [01/Mar/2024 20:26:27] "[33mPOST /add_contact HTTP/1.1[0m" 404 -
+2024-03-01 20:27:19,042 - INFO - Servidor iniciado
+2024-03-01 20:27:19,063 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 20:27:19,063 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 20:27:19,063 - INFO -  * Restarting with stat
+2024-03-01 20:27:19,185 - INFO - Servidor iniciado
+2024-03-01 20:27:19,187 - WARNING -  * Debugger is active!
+2024-03-01 20:27:19,188 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 20:27:20,441 - INFO - 187.189.248.248 - - [01/Mar/2024 20:27:20] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:27:29,360 - INFO - Nuevo usuario "a21110121 " agregado exitosamente
+2024-03-01 20:27:29,361 - INFO - 187.189.248.248 - - [01/Mar/2024 20:27:29] "[32mPOST /add_user HTTP/1.1[0m" 302 -
+2024-03-01 20:27:29,443 - INFO - 187.189.248.248 - - [01/Mar/2024 20:27:29] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:27:45,368 - INFO - El usuario con id "10" fue eliminado de manera exitosa
+2024-03-01 20:27:45,369 - INFO - 187.189.248.248 - - [01/Mar/2024 20:27:45] "[32mGET /delete/10 HTTP/1.1[0m" 302 -
+2024-03-01 20:27:45,450 - INFO - 187.189.248.248 - - [01/Mar/2024 20:27:45] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:29:22,112 - INFO - Servidor iniciado
+2024-03-01 20:29:22,129 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 20:29:22,130 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 20:29:22,130 - INFO -  * Restarting with stat
+2024-03-01 20:29:22,251 - INFO - Servidor iniciado
+2024-03-01 20:29:22,253 - WARNING -  * Debugger is active!
+2024-03-01 20:29:22,253 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 20:29:24,683 - INFO - 187.189.248.248 - - [01/Mar/2024 20:29:24] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:29:37,719 - INFO - Nuevo usuario "a21110121 " agregado exitosamente
+2024-03-01 20:29:37,720 - INFO - 187.189.248.248 - - [01/Mar/2024 20:29:37] "[32mPOST /add_user HTTP/1.1[0m" 302 -
+2024-03-01 20:29:37,802 - INFO - 187.189.248.248 - - [01/Mar/2024 20:29:37] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:30:24,501 - INFO - Cierre de sesión de: david
+2024-03-01 20:30:24,501 - INFO - 187.189.248.248 - - [01/Mar/2024 20:30:24] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2024-03-01 20:30:24,584 - INFO - 187.189.248.248 - - [01/Mar/2024 20:30:24] "GET /login HTTP/1.1" 200 -
+2024-03-01 20:30:29,070 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 20:30:29,070 - WARNING - Inicio de sesión fallido de: david
+2024-03-01 20:30:29,071 - INFO - 187.189.248.248 - - [01/Mar/2024 20:30:29] "POST /verify_login HTTP/1.1" 200 -
+2024-03-01 20:30:33,846 - INFO - Intento de inicio de sesión de usuario: a21110121
+2024-03-01 20:30:33,847 - INFO - Inicio de sesión del usuario "a21110121" completado de manera exitosa
+2024-03-01 20:30:33,848 - INFO - 187.189.248.248 - - [01/Mar/2024 20:30:33] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 20:30:33,930 - INFO - 187.189.248.248 - - [01/Mar/2024 20:30:33] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:30:43,617 - INFO - 187.189.248.248 - - [01/Mar/2024 20:30:43] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 20:31:05,726 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:05] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:31:07,548 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:07] "GET /edit/1 HTTP/1.1" 200 -
+2024-03-01 20:31:11,026 - INFO - Usuario "a21110121" actualizado exitosamente
+2024-03-01 20:31:11,027 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:11] "[32mPOST /update/1 HTTP/1.1[0m" 302 -
+2024-03-01 20:31:11,108 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:11] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:31:14,491 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:14] "GET /logs HTTP/1.1" 200 -
+2024-03-01 20:31:17,554 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:17] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 20:31:21,401 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:21] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:31:30,026 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:30] "GET /edit/1 HTTP/1.1" 200 -
+2024-03-01 20:31:39,310 - INFO - Cierre de sesión de: a21110121 
+2024-03-01 20:31:39,310 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:39] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2024-03-01 20:31:39,391 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:39] "GET /login HTTP/1.1" 200 -
+2024-03-01 20:31:45,280 - INFO - Intento de inicio de sesión de usuario: a21110121
+2024-03-01 20:31:45,281 - INFO - Inicio de sesión del usuario "a21110121" completado de manera exitosa
+2024-03-01 20:31:45,281 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:45] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 20:31:45,362 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:45] "GET /home HTTP/1.1" 200 -
+2024-03-01 20:31:51,237 - INFO - 187.189.248.248 - - [01/Mar/2024 20:31:51] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 20:41:49,891 - ERROR - 205.210.31.29 - - [01/Mar/2024 20:41:49] code 400, message Bad request version ('f¢Ðn')
+2024-03-01 20:41:49,891 - INFO - 205.210.31.29 - - [01/Mar/2024 20:41:49] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03¼\x99f|\x03¶è+|òZ9ÑY\x00ÁÈá\x8e¥\x14¢áÑýKvû\x9a\x17\x04Í i\x1bÛ,x\x1aÑ~§,o\x9bc-b\x1cf¢Ðn[0m" 400 -
+2024-03-01 20:41:49,970 - ERROR - 205.210.31.29 - - [01/Mar/2024 20:41:49] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03;^\x81¼JÝN4ÌKÑ#Á»¾±ýû')
+2024-03-01 20:41:49,970 - INFO - 205.210.31.29 - - [01/Mar/2024 20:41:49] "[31m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03;^\x81¼JÝN4ÌKÑ#Á»¾±ýû[0m" 400 -
+2024-03-01 20:47:08,545 - INFO - 198.199.103.107 - - [01/Mar/2024 20:47:08] "[33mGET /portal/redlion HTTP/1.1[0m" 404 -
+2024-03-01 20:47:58,296 - INFO - 45.79.181.94 - - [01/Mar/2024 20:47:58] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 20:49:48,339 - INFO - 45.79.181.94 - - [01/Mar/2024 20:49:48] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 20:54:02,766 - ERROR - 143.198.214.253 - - [01/Mar/2024 20:54:02] code 400, message Bad request version ('À\x13À')
+2024-03-01 20:54:02,766 - INFO - 143.198.214.253 - - [01/Mar/2024 20:54:02] "[31m[1m\x16\x03\x01\x01\x04\x01\x00\x01\x00\x03\x03~\x08¾P¢(<7;¹Wã\x7f\x85\x95Cm\\\x19)Ï«ê\x10\x91_Ã²$YdK ((ÌÞ°w\x06»\x8c\x99\x03D\x8d\x8f{$Þ\x11\x00+\x00Ã\x8e\x81¿W¢TÂÐ\x17ä\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+2024-03-01 20:57:24,259 - INFO - 143.198.214.253 - - [01/Mar/2024 20:57:24] "[33mGET /hello HTTP/1.1[0m" 404 -
+2024-03-01 21:08:57,553 - INFO - 95.214.235.169 - - [01/Mar/2024 21:08:57] "[33mGET /.env HTTP/1.1[0m" 404 -
+2024-03-01 21:08:58,506 - INFO - 95.214.235.169 - - [01/Mar/2024 21:08:58] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-03-01 21:21:16,326 - INFO - 187.189.248.248 - - [01/Mar/2024 21:21:16] "GET /home HTTP/1.1" 200 -
+2024-03-01 21:21:20,585 - INFO - 187.189.248.248 - - [01/Mar/2024 21:21:20] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 21:21:51,870 - INFO - 35.196.132.85 - - [01/Mar/2024 21:21:51] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 21:21:52,001 - INFO - 35.196.132.85 - - [01/Mar/2024 21:21:52] "GET /login HTTP/1.1" 200 -
+2024-03-01 21:21:58,292 - INFO - 187.190.205.33 - - [01/Mar/2024 21:21:58] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 21:21:58,366 - INFO - 187.190.205.33 - - [01/Mar/2024 21:21:58] "GET /login HTTP/1.1" 200 -
+2024-03-01 21:21:58,622 - INFO - 187.190.205.33 - - [01/Mar/2024 21:21:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 21:22:11,350 - INFO - 198.235.24.83 - - [01/Mar/2024 21:22:11] "[32mGET / HTTP/1.0[0m" 302 -
+2024-03-01 21:22:32,997 - INFO - Intento de inicio de sesión de usuario: a21110121
+2024-03-01 21:22:32,998 - INFO - Inicio de sesión del usuario "a21110121" completado de manera exitosa
+2024-03-01 21:22:32,999 - INFO - 187.190.205.33 - - [01/Mar/2024 21:22:32] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 21:22:33,072 - INFO - 187.190.205.33 - - [01/Mar/2024 21:22:33] "GET /home HTTP/1.1" 200 -
+2024-03-01 21:22:46,048 - INFO - 187.190.205.33 - - [01/Mar/2024 21:22:46] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 21:23:14,324 - INFO - 187.190.205.33 - - [01/Mar/2024 21:23:14] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 21:23:28,857 - INFO - 187.190.205.33 - - [01/Mar/2024 21:23:28] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 21:23:30,294 - INFO - 187.190.205.33 - - [01/Mar/2024 21:23:30] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 21:23:43,375 - INFO - 187.190.205.33 - - [01/Mar/2024 21:23:43] "GET /logs HTTP/1.1" 200 -
+2024-03-01 21:24:01,319 - INFO - 187.190.205.33 - - [01/Mar/2024 21:24:01] "GET /home HTTP/1.1" 200 -
+2024-03-01 21:24:49,492 - INFO - 187.190.205.33 - - [01/Mar/2024 21:24:49] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 21:24:52,952 - INFO - 187.190.205.33 - - [01/Mar/2024 21:24:52] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 21:25:50,780 - INFO - 187.190.205.33 - - [01/Mar/2024 21:25:50] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 21:26:05,627 - INFO - Servidor iniciado
+2024-03-01 21:26:05,643 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 21:26:05,643 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 21:26:05,643 - INFO -  * Restarting with stat
+2024-03-01 21:26:05,776 - INFO - Servidor iniciado
+2024-03-01 21:26:05,778 - WARNING -  * Debugger is active!
+2024-03-01 21:26:05,779 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 21:26:05,793 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:05] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 21:26:05,869 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:05] "GET /login HTTP/1.1" 200 -
+2024-03-01 21:26:05,960 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:05] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 21:26:06,032 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:06] "GET /login HTTP/1.1" 200 -
+2024-03-01 21:26:06,247 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 21:26:12,051 - INFO - Intento de inicio de sesión de usuario: a21110121
+2024-03-01 21:26:12,053 - INFO - Inicio de sesión del usuario "a21110121" completado de manera exitosa
+2024-03-01 21:26:12,054 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:12] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 21:26:12,130 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:12] "GET /home HTTP/1.1" 200 -
+2024-03-01 21:26:14,964 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:14] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 21:26:20,970 - INFO - 187.190.205.33 - - [01/Mar/2024 21:26:20] "GET /logs HTTP/1.1" 200 -
+2024-03-01 21:27:00,741 - INFO - 187.190.205.33 - - [01/Mar/2024 21:27:00] "GET /home HTTP/1.1" 200 -
+2024-03-01 21:27:02,136 - INFO - 187.190.205.33 - - [01/Mar/2024 21:27:02] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 21:27:24,743 - INFO - 187.190.205.33 - - [01/Mar/2024 21:27:24] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 21:27:44,449 - INFO - 187.190.205.33 - - [01/Mar/2024 21:27:44] "GET /home HTTP/1.1" 200 -
+2024-03-01 21:57:48,684 - INFO - 52.81.239.40 - - [01/Mar/2024 21:57:48] "[33mGET /.vscode/sftp.json HTTP/1.1[0m" 404 -
+2024-03-01 22:01:42,040 - INFO - 35.227.62.178 - - [01/Mar/2024 22:01:42] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 22:01:42,174 - INFO - 35.237.4.214 - - [01/Mar/2024 22:01:42] "GET /login HTTP/1.1" 200 -
+2024-03-01 22:01:50,790 - INFO - 187.189.155.161 - - [01/Mar/2024 22:01:50] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 22:01:50,866 - INFO - 187.189.155.161 - - [01/Mar/2024 22:01:50] "GET /login HTTP/1.1" 200 -
+2024-03-01 22:01:51,198 - INFO - 187.189.155.161 - - [01/Mar/2024 22:01:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 22:02:08,350 - INFO - Intento de inicio de sesión de usuario: a21110121
+2024-03-01 22:02:08,351 - INFO - Inicio de sesión del usuario "a21110121" completado de manera exitosa
+2024-03-01 22:02:08,352 - INFO - 187.189.155.161 - - [01/Mar/2024 22:02:08] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 22:02:08,431 - INFO - 187.189.155.161 - - [01/Mar/2024 22:02:08] "GET /home HTTP/1.1" 200 -
+2024-03-01 22:02:13,810 - INFO - 187.189.155.161 - - [01/Mar/2024 22:02:13] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 22:02:45,236 - INFO - Servidor iniciado
+2024-03-01 22:03:43,040 - INFO - Servidor iniciado
+2024-03-01 22:03:43,051 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 22:03:43,051 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 22:03:43,051 - INFO -  * Restarting with stat
+2024-03-01 22:03:43,183 - INFO - Servidor iniciado
+2024-03-01 22:03:43,186 - WARNING -  * Debugger is active!
+2024-03-01 22:03:43,186 - INFO -  * Debugger PIN: 485-997-794
+2024-03-01 22:03:45,232 - INFO - 187.189.248.248 - - [01/Mar/2024 22:03:45] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 22:03:47,060 - INFO - 187.189.248.248 - - [01/Mar/2024 22:03:47] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:03:53,972 - INFO - 187.189.155.161 - - [01/Mar/2024 22:03:53] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 22:03:54,045 - INFO - 187.189.155.161 - - [01/Mar/2024 22:03:54] "GET /login HTTP/1.1" 200 -
+2024-03-01 22:04:00,725 - INFO - Intento de inicio de sesión de usuario: a21110121
+2024-03-01 22:04:00,727 - INFO - Inicio de sesión del usuario "a21110121" completado de manera exitosa
+2024-03-01 22:04:00,728 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:00] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 22:04:00,805 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:00] "GET /home HTTP/1.1" 200 -
+2024-03-01 22:04:08,016 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:08] "GET /terminal HTTP/1.1" 200 -
+2024-03-01 22:04:10,711 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:10] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:04:29,330 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:29] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:04:33,949 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:33] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:04:34,911 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:34] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:04:39,789 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:39] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:04:44,900 - INFO - 187.189.155.161 - - [01/Mar/2024 22:04:44] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:05:13,337 - INFO - 187.189.248.248 - - [01/Mar/2024 22:05:13] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:05:23,483 - INFO - 187.189.155.161 - - [01/Mar/2024 22:05:23] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:05:33,212 - INFO - 187.189.155.161 - - [01/Mar/2024 22:05:33] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:05:36,846 - INFO - 187.189.155.161 - - [01/Mar/2024 22:05:36] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 22:05:42,700 - INFO - 187.189.155.161 - - [01/Mar/2024 22:05:42] "POST /execute/bash/command HTTP/1.1" 200 -
+2024-03-01 23:52:10,220 - INFO - Servidor iniciado
+2024-03-01 23:52:10,238 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.138.0.3:80
+2024-03-01 23:52:10,238 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 23:52:10,238 - INFO -  * Restarting with stat
+2024-03-01 23:52:10,365 - INFO - Servidor iniciado
+2024-03-01 23:52:10,367 - WARNING -  * Debugger is active!
+2024-03-01 23:52:10,368 - INFO -  * Debugger PIN: 108-895-676
+2024-03-01 23:52:26,536 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:26] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 23:52:26,621 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:26] "GET /login HTTP/1.1" 200 -
+2024-03-01 23:52:26,936 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 23:52:36,535 - INFO - Intento de inicio de sesión de usuario: david
+2024-03-01 23:52:36,537 - WARNING - Inicio de sesión fallido de: david
+2024-03-01 23:52:36,537 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:36] "POST /verify_login HTTP/1.1" 200 -
+2024-03-01 23:52:42,458 - INFO - Intento de inicio de sesión de usuario: a21110121
+2024-03-01 23:52:42,459 - INFO - Inicio de sesión del usuario "a21110121" completado de manera exitosa
+2024-03-01 23:52:42,460 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:42] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
+2024-03-01 23:52:42,546 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:42] "GET /home HTTP/1.1" 200 -
+2024-03-01 23:52:46,329 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:46] "GET /home HTTP/1.1" 200 -
+2024-03-01 23:52:50,326 - INFO - Cierre de sesión de: a21110121
+2024-03-01 23:52:50,326 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:50] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2024-03-01 23:52:50,407 - INFO - 187.189.248.248 - - [01/Mar/2024 23:52:50] "GET /login HTTP/1.1" 200 -
+2024-03-01 23:54:42,714 - INFO - 187.189.248.248 - - [01/Mar/2024 23:54:42] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 23:54:42,796 - INFO - 187.189.248.248 - - [01/Mar/2024 23:54:42] "GET /login HTTP/1.1" 200 -
+2024-03-01 23:54:43,047 - INFO - 187.189.248.248 - - [01/Mar/2024 23:54:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 23:55:52,409 - INFO - 167.94.145.53 - - [01/Mar/2024 23:55:52] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 23:55:55,861 - INFO - 167.94.145.53 - - [01/Mar/2024 23:55:55] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 23:55:56,199 - ERROR - 167.94.145.53 - - [01/Mar/2024 23:55:56] code 505, message Invalid HTTP version (2.0)
+2024-03-01 23:55:56,199 - INFO - 167.94.145.53 - - [01/Mar/2024 23:55:56] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+2024-03-01 23:55:59,560 - INFO - 167.94.145.53 - - [01/Mar/2024 23:55:59] "GET /login HTTP/1.1" 200 -
+2024-03-01 23:55:59,873 - ERROR - 167.94.145.53 - - [01/Mar/2024 23:55:59] code 505, message Invalid HTTP version (2.0)
+2024-03-01 23:55:59,873 - INFO - 167.94.145.53 - - [01/Mar/2024 23:55:59] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+2024-03-01 23:56:00,173 - INFO - 167.94.145.53 - - [01/Mar/2024 23:56:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:00:03,765 - INFO - 187.189.129.72 - - [02/Mar/2024 00:00:03] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:00:04,162 - INFO - 187.189.129.72 - - [02/Mar/2024 00:00:04] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:11:08,626 - INFO - 187.189.248.248 - - [02/Mar/2024 00:11:08] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:27:47,695 - INFO - Servidor iniciado
+2024-03-02 00:27:47,718 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:443
+ * Running on http://10.138.0.3:443
+2024-03-02 00:27:47,718 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-02 00:27:47,720 - INFO -  * Restarting with stat
+2024-03-02 00:27:47,848 - INFO - Servidor iniciado
+2024-03-02 00:27:47,854 - WARNING -  * Debugger is active!
+2024-03-02 00:27:47,854 - INFO -  * Debugger PIN: 110-063-504
+2024-03-02 00:28:09,447 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:09] code 400, message Bad request version ('\\ÅùØóäèîÒ-Ð1åM\x91\x83\x0e\x84eÜjJ')
+2024-03-02 00:28:09,447 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:09] "[31m[1m\x16\x03\x01\x01\x11\x01\x00\x01\x0d\x03\x03Ý yè9Øä\x0b\\ÅùØóäèîÒ-Ð1åM\x91\x83\x0e\x84eÜjJ[0m" 400 -
+2024-03-02 00:28:09,448 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:09] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+2024-03-02 00:28:09,448 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:09] "[31m[1m\x16\x03\x01\x01\x11\x01\x00\x01\x0d\x03\x03dxØP¯\x80\x9cÎe¾æ¨ã£í\x8bõÕ\x10Wÿý\x94w\x13dò$ù\x00àF \x8d\x959~\x8bU\x0d õ\x1créÊ3\x0b¨\x89hoè\x85K_ù¿l²~}±\x88\x99\x00 \x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00ÿ\x01\x00\x00¤\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" 400 -
+2024-03-02 00:28:09,539 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:09] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+2024-03-02 00:28:09,539 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:09] "[31m[1m\x16\x03\x01\x01\x11\x01\x00\x01\x0d\x03\x03ña\x050ïþmHÙ2\x82\x0e\x02\x9bé*§R|Gâ¢Z×ê";töþFÛ i\x9açûvþU^ÿüp\x07RçèÁÝèº\x0bþX¢Þ{=£ì\x18\x1b×f\x00 \x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00ÿ\x01\x00\x00¤\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" 400 -
+2024-03-02 00:28:09,582 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:09] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+2024-03-02 00:28:09,582 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:09] "[31m[1m\x16\x03\x01\x01\x11\x01\x00\x01\x0d\x03\x03\x01\x9c¬\x8f,ý\x04i\x14Ë\x84TÂ,C\x85h{â\x00\x01vR %w0Ã\x08ü\x0cº ñí\x1c\x1d´\x0eXÆ85{7F²ÈlýÓºDÚ]Ð\x85è=ÔvòÜ¯Ý\x00 \x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00ÿ\x01\x00\x00¤\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" 400 -
+2024-03-02 00:28:09,584 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:09] code 400, message Bad request version ('üè+\x14iÕ4*å\x9c\x8eq;_\x15©5\xadP´Ë')
+2024-03-02 00:28:09,584 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:09] "[31m[1m\x16\x03\x01\x01\x11\x01\x00\x01\x0d\x03\x03êÍXÛÚ\x17ü\x80\x06\x9b_ý,9£¿\x18\x09ªî\x026ð\x1d¸\x96\x10\x17©Ôa¬ üè+\x14iÕ4*å\x9c\x8eq;_\x15©5­P´Ë[0m" 400 -
+2024-03-02 00:28:10,761 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:10] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+2024-03-02 00:28:10,761 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:10] "[31m[1m\x16\x03\x01\x02\x18\x01\x00\x02\x14\x03\x03 Ye\x06pQ\x81\x82\x85\x14°)i·$§ä\x0cÀ"Üo×[\x14qÇkÚæoì §c÷ZB<eè\x17ùhØÊ\x17)$'G9f\x9aP\x14ÃÔ\x10¶ \\*M%\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01«zz\x00\x00\x003\x00+\x00)JJ\x00\x01\x00\x00\x1d\x00 \x11Üê/ÒËëöRTvá\x10\x87\x18û^2\x8cDÛ\x8c_íÁ ®k\x9bC\x0b\x15þ\x0d\x00Ú\x00\x00\x01\x00\x01\x1f\x00 \x8aÀ\x80\x15\x0bgÁ\x01=\x0eãÏo,D[LnJ¯\x07ðÒcì\x94\x0d´«¡&\x02\x00°ôé6\x83#|A®ý°òZò¶jõIfÐÞ\x98\x16\x1fíeìÞ.×Þ²ìõµWÛ\x0d\x02\x12\x05 ·ë\x0eL\x92íh<\x7f÷w\x07DÄ.ó\x02²Ç\x8a\x9f\x89øD¨W©¼]þçÿy)Cõõüî\x10Ä\x0b<EÄ\x06\x0dÂPçí¾\x05\x0fùVr¼\x1f4\x0dE\x01P»ï  tz»¶\x83¶\x9dü'çÞØÍ¸L ®>ÄZî\x0f*\x0còL\x14\x9aü\x1a\x7f>ùónAÞ\x94ÿc²\x9eH\x8d\x85\x1bÃE\x1c1\x86\x10ðP\x80º1bY¥\x87LñÏÌî\x16\x00#\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x17\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00[0m" 400 -
+2024-03-02 00:28:10,761 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:10] code 400, message Bad request version ('¼\x00')
+2024-03-02 00:28:10,762 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:10] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¸±\x07\x07\x9a\x84\x8f çø Ht\x81D\x05\x11\x1b\x18Øo(L<\x1dK\x1a¾çó/¢ â\x09wÊÓÆYÚ\x06\x19¼ÏÍÙ\x93Ãîú#L»tÕµ\x13:ûÏ-¾\x1c¼\x00 [0m" 400 -
+2024-03-02 00:28:10,895 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:10] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+2024-03-02 00:28:10,895 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:10] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x031V2'b\x92ø\x96\x85\x84&±DÈ\x1b ¡Ä\x9c"\x0dE37\x96ó¨÷^ÄW\x1e «\x06þ\x9d\x14\x83\x1c\x8f\x15§}IÅÍöI(lÍÃ\x1cÈ,Ö§¸OF\x1c7\x07t\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93**\x00\x00\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00#\x00\x00\x00\x12\x00\x00\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00Di\x00\x05\x00\x03\x02h2þ\x0d\x00º\x00\x00\x01\x00\x01Ä\x00 sÚ\x05a\x12\x94Øé\x8fuË\x92`Á"å\x10 Ø`d­\x19¯¢~\x8a\x00}»¥d\x00\x90.\x9dP \x1a\x86Z'\x13\x1fE\x0cy@¼ßI\x84÷\\q_üñ¾ñ\x0fÒÎ\x11¢rÎf,\x990\x9dH«^ÓAQE\x15ÿT\x8bH\x09ä0§=\x18L¹.S\x13%\x7fÁ\x91æµ1\x09\x13WqØþ¯Dú\x04×\x0c2(qé\x14·+÷\x1fÜ\x9b\x18ð\x19Ô0\x847xaq¹¨\\¬7\x96­Æ\x1efÉ\x0eE¸\x80Æa\x99§\x8aÁ|ÿ,\x822YW\x01xòg\x9dôðKYx¦]÷\x84\x0b\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00[0m" 400 -
+2024-03-02 00:28:10,896 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:10] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ë')
+2024-03-02 00:28:10,896 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:10] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03\x86\x84\x7fbVëÂ;i\x7fO\x92æú\x05\x9cT\x14]QJgNaÛëT¢´ï\x15\x9a K3§4äúfI\x13"\x01ã\x17ÇÛ¢\x854]KÐ\x1dZ\x8c¿.¥\x87É\x9f¥ë\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ë[0m" 400 -
+2024-03-02 00:28:13,093 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:13] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06')
+2024-03-02 00:28:13,094 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:13] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03'\x87PÔô0Ö\x88}TX\x0d2Ê!w ÿë\x91g]óc\x87ÄÓÐ\x91\x11j\x1b üy?§n³[¶zo\x15sY=ç°ì÷\x19s<s`\x8d\x14³þSE\x9e\x1aÜ\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x00\x0b\x00\x02\x01\x00þ\x0d\x00º\x00\x00\x01\x00\x01¤\x00 \x1a\x8d\x8e½ÜÄÖ\x87\x84Kþ\x03\x1b\x06\x93ùÔ\x98\x12X¬Î\x9a¬\x8cu\x12\x0exÿ\x86\x14\x00\x90\x1b=`PLf½voâZ l\x86ÿÙúµ\x85Û\x10ÄÑå\x05$\x9eÝ\x17\x0dhÆ&>%\x84ÍAVLà.½S\x8ac0S<êö\x03óbuÐ\x89\x09õPëØªç\x02áH\x89×;]¦\x19åãÞ8i?/¾Ï\x04ú?B\x00È[&\x8c}\x9a\x9d\x8a\x1br\x91o¡ÛöÀ³Ï:\x0cÆ7Éo½\x85{\x80Û\x07\x82Emë#\x97l|(\x98~îhRt/;\x11SW\x7fìüÞ5Üo\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06[0m" 400 -
+2024-03-02 00:28:13,094 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:13] code 400, message Bad request version ('\x89¡ûG]¼\x0fQ¦r£ÃDC/ïPA\x18\x18\x08i®')
+2024-03-02 00:28:13,094 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:13] "[31m[1m\x16\x03\x01\x02\x18\x01\x00\x02\x14\x03\x03+\x18\x89ì~d!Ü4¼\x88\x00Õ\x0fcáxês\x990r\x83\x01\x9e¡óW\x0bß\x9fT .¦Â\x917iÅs\x85Y@~'W\x8e\x83=\x16\x07\x06¶Ð\x8f²©\x98¾Zµ\x9eô²\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01«ªª\x00\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2þ\x0d\x00Ú\x00\x00\x01\x00\x01\x15\x00 \x89¡ûG]¼\x0fQ¦r£ÃDC/ïPA\x18\x18\x08i®[0m" 400 -
+2024-03-02 00:28:13,227 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:13] code 400, message Bad request version ('\x00Ð\x87\x82¾u|è/Eçbbwü\x13\x97ëõõÒ\x86A')
+2024-03-02 00:28:13,227 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:13] "[31m[1m\x16\x03\x01\x028\x01\x00\x024\x03\x03[lÈëh\x1d\x9c\x1dg\x03øF\x82±\x9a\x14²?B\x1d\x9e\x89I^ç$\x162ie<¡ \x84Ä\x7fÒW¬¸H© rè\x18\x84µ©HwWÖöÆvÚ,Ï­\x12ö\x99\x1e0\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ËJJ\x00\x00\x00\x0b\x00\x02\x01\x00þ\x0d\x00ú\x00\x00\x01\x00\x01\x09\x00 2aþó¶P´\x9fz¾®\x1ewñA}²\x1d\x17\x8c*ßHÏ@m±¦òÁ<\x1f\x00Ð\x87\x82¾u|è/Eçbbwü\x13\x97ëõõÒ\x86A[0m" 400 -
+2024-03-02 00:28:13,230 - ERROR - 187.189.248.248 - - [02/Mar/2024 00:28:13] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x003\x00+\x00)')
+2024-03-02 00:28:13,230 - INFO - 187.189.248.248 - - [02/Mar/2024 00:28:13] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x030è&g·èL\x94Dä¹)´a¢Í\x82©ðÔ\x1có;û7-\x8fçoô8n Çà;\x1eÇ\x06ÀÛ\x9b\x90®þ\x97ÅuÑDj\x17\x1c'¤Ï\x138ñhÖ\x1fm`Ö\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ë\x9a\x9a\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x003\x00+\x00)[0m" 400 -
+2024-03-02 00:28:22,652 - ERROR - 104.198.29.240 - - [02/Mar/2024 00:28:22] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+2024-03-02 00:28:22,653 - INFO - 104.198.29.240 - - [02/Mar/2024 00:28:22] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x12tK\x06ã]fXªó·\x10HBi<®\x89hònD\x90â²¸VÊ\x104Xo í`_¡2:l\x0d«,\x8b\x11\x09j\x1a+Úf:E\x98\x03\x03h#Ø×\x99Ä.\x8ar\x00$\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨À$À(À#À'\x00\x9f\x00\x9e\x00k\x00g\x00ÿ\x01\x00\x01\x8f\x00\x00\x00\x1e\x00\x1c\x00\x00\x19www.davidloera-flask.info\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" 400 -
+2024-03-02 00:30:10,573 - INFO - Servidor iniciado
+2024-03-02 00:30:10,589 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:443
+ * Running on http://10.138.0.3:443
+2024-03-02 00:30:10,589 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-02 00:30:10,590 - INFO -  * Restarting with stat
+2024-03-02 00:30:10,714 - INFO - Servidor iniciado
+2024-03-02 00:30:10,719 - WARNING -  * Debugger is active!
+2024-03-02 00:30:10,720 - INFO -  * Debugger PIN: 110-063-504
+2024-03-02 00:30:21,170 - ERROR - 216.19.203.165 - - [02/Mar/2024 00:30:21] code 400, message Bad request version ('¿n&R)á/±aÛµ7\x8f\\Di\x00\x05\x00\x03\x02h2\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00-\x00\x02\x01\x01\x00+\x00\x07\x06::\x03\x04\x03\x03\x00')
+2024-03-02 00:30:21,170 - INFO - 216.19.203.165 - - [02/Mar/2024 00:30:21] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03«7ã\x81¨Áµ\x00\x9eÖþÈÿ~;;|9Þ\x9c+\x85Z\x04\x86Ä\x9c².Æ\x945 \x93v\x9bJ\x8cÑ\x05\x81d·ö\x19ÛÊ¾ñÜ\x10i\x0d\x1e3I\x9eEA?ÊIÎ\x8f¿\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ëJJ\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00#\x00\x00\x00\x17\x00\x00\x003\x00+\x00)ºº\x00\x01\x00\x00\x1d\x00 8*Ô\x13>aRò)J_§²\x81¥îáYó÷Á¯\x95í1Ä\x1eCSËÌ.\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\x0d\x01\x1a\x00\x00\x01\x00\x01U\x00 á§Á\x18"Õdq\x8f4  \x15Vò\x15%\x11\x04\x94}C"dþÆâU¬\x92Ûe\x00ðç-\x7fP¨{\x8f\x80\x18N\x89\x81V]Ê\x91´ûÕøüä\x1b\x9bÐ\x1d¯×)¾\x9eRëd5ÚÂ\x1cÕÓV¦\x98\x91\x02\x99\x9aÂxâ\x87¬\x8a&Äê\x90­²³;Ãl\x86òRÙ»ÝxßSg¬á\x8ak¤\x11·âæÌòëS\x9aÖá\\I¢Ý7#h¤Ö\x006D\x18}{Äê\x05É&\x96<\x9c>·ÑöK\x04\x86FËÌ\x19u\x0bOW\x8aM\x13cv\x1b\x86Ë\x8f±S©\x86<Hz=þ¬uR»dÕ\x94\x9b\x10¤+Zü!òCê\x93\x8fâµ\x19"\x17Üo\x94xÒ\x17¨¾J/\x9d.\x9a^K\x91\x7f\x92ÕÅþÊ£Ìá¡sÀ\x7f\x8c+\x02\x12!úþe«Ý²ò\x997\x17$u3À\x01³DyîÌñì ¿n&R)á/±aÛµ7\x8f\\Di\x00\x05\x00\x03\x02h2\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00-\x00\x02\x01\x01\x00+\x00\x07\x06::\x03\x04\x03\x03\x00[0m" 400 -
+2024-03-02 00:30:21,262 - ERROR - 92.114.61.132 - - [02/Mar/2024 00:30:21] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00\x1b\x00\x03\x02\x00\x02\x00')
+2024-03-02 00:30:21,263 - INFO - 92.114.61.132 - - [02/Mar/2024 00:30:21] "[31m[1m\x16\x03\x01\x028\x01\x00\x024\x03\x03\x1f*L\x1e½þ­]o\x08\x1f\x1a[Å\x8c8Ø\x8aNgþ´£3\x04¨\x0fß\x81Q\x9a\x05 f\x1b\x1b\x05àþÀ\x0b~\x86\x17,f'\x8867º=f·\x853\x04º\x8c\x09c\x93mr¤\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ëºº\x00\x00\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x00+\x00)ÊÊ\x00\x01\x00\x00\x1d\x00 \x1e}®Ìþor\x1c=\x08Éä®NëYì\x19\x83Ù\x9c9îñ\x03\x13Ü\x93ªv?\x07\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00\x1b\x00\x03\x02\x00\x02\x00[0m" 400 -
+2024-03-02 00:30:21,522 - ERROR - 188.94.86.141 - - [02/Mar/2024 00:30:21] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x17\x00\x00\x00')
+2024-03-02 00:30:21,523 - INFO - 188.94.86.141 - - [02/Mar/2024 00:30:21] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03¿ë\x15\x8a¯?Ú`¸\x9bDü\x9c¶\x07c\x8a0ù°\x9e¤í'b\x09ç<QÎ5ø j\x15w¥\x17\x88\x1e\x99\x04\x0c\x8aÌÃU$\x0f¶CÈ\x7f\x8dn\x94\x09÷\x9dúö\x97Cq¸\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ëjj\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01£\x00 f×z7\x07÷ Ô¬2¢I\x0cÛH¥b\x94I*\x9e\x180´^®ÑTáu\x99\x1a\x00ð¶Qf§bÅûDÆíÂ\x97\x9c¹\x16\x9c8#IÄÏÔb?çþ\x8f¶¢EOµ\x12N¸9^¾\x0fi\x9dÉ£\x1aY\x962±\x95Fiåv\x84æ\x04nÛ\x19ûk5j\x15é\x0dÙÉaÇ6\x07\x01\x91v\x0f\x9f£>¯\x93Óïû\x0fÅ\x1aüð\x9f±ÇMme/¶\x9f¡\x13É®'CÝ\x91õ[pìÈ!\x15¥\x8f\x99ì=\x817|Zy¤Õ\x99=ãH\x92\x86­ûà{\x81KÓæ\x02´ì>·÷\x87Â`,QñÚáÑ\x16\x18XÇ\x80Q\x1c÷]¶bu\x14ñí&\x1c\x8eÇ¬ªÜ\x84]ÄñeN\x18\x15³Ø\x0f\x8b××\x81D¶\x8d }\x80à\x9e\x88¿`\x84Æ(¯\x9ds{þ\x12l¶îM5\x84rúN\x16!\x00\x04\x8cÎÌM^ÚY\x8eÐµÏa\x84\x13\x915\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06::\x03\x04\x03\x03Di\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x003\x00+\x00)\x8a\x8a\x00\x01\x00\x00\x1d\x00 8lUþ¸;7r\x9f\x03\x8e£\x0cT.J\x92\x10×Ç\x1dS,²\x0e¦ìíuÂ\x82~\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x17\x00\x00\x00[0m" 400 -
+2024-03-02 00:30:21,549 - ERROR - 152.39.189.97 - - [02/Mar/2024 00:30:21] code 400, message Bad request version ('ä')
+2024-03-02 00:30:21,550 - INFO - 152.39.189.97 - - [02/Mar/2024 00:30:21] "[31m[1m\x16\x03\x01\x028\x01\x00\x024\x03\x03\x8c¸\x86b\x00\x8e\x9d|¾\x94¸¸»CÌ\x85 £éËb>\x89\x86!+\x96¨)\x87¢Æ Ê£ÅV¨ ä[0m" 400 -
+2024-03-02 00:30:28,443 - ERROR - 176.223.107.60 - - [02/Mar/2024 00:30:28] code 400, message Bad request version ('úqóêf\x16\x9b¡\xad>°ÕG\x00')
+2024-03-02 00:30:28,444 - INFO - 176.223.107.60 - - [02/Mar/2024 00:30:28] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03Èâ ©\x924\x12´Ýð\x0fh|\x86qpÃ\x96èo\x91\x0dN\x1f$\x16\x87\x9en^ÿ\x0b Uër5\x19/êÕC#E\x85J\x04H\x12\x05\x0c\x0f¶;º\x14\x88,Ò><ñ0\x83\x90\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ëjj\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01n\x00 o¡÷ÊÒ'®\x8aXò\\é¦óí\x0e\x86UGLéæ}3\x03\x18S M%Ë)\x00ðW\x9dï§L¦ë¤¨Lõ<¸\x13\x9f\x0f½¨JÛ\x0f&Wí\x18áe\x0882õ;T>4\x10ÖÅãÄ\x881\x02À\x97\x9egÈ\x87\x8dc\x91\x03\x9a~\x9fê\x9dEçwc\x82C?Oæñ\x10&K69Í\x19ò[¿¤é>¾´&\x05ëN\x84\x11·G=¥Öê\x94ÇÞC(xU\x98½³\x04W\x9e\x1f°±\x9d®:k\x9dû\x8b\x8dñÞÜt{\x02A+pzÞ\x9fDü\x86\x07\\ïH4dOöÔ 1¢ú"ìk\x1avÎ\x00þG&\x1d²:Ô\x96\x8cF+ÿ6\x85\x12(4zuÙ\x19\x82ú\x10;\x1a{\x94\x9d\x98/\x14Z\x9dc\x1b\x84ûÄØ\x8e<\x18Ç\x0b²7+\x04sDV\x01\x8e\x93\x07\x8dGÃ!é\x9d¾ì\x1duL<Ñ£òX úqóêf\x16\x9b¡­>°ÕG\x00[0m" 400 -
+2024-03-02 00:30:28,615 - ERROR - 168.151.125.115 - - [02/Mar/2024 00:30:28] code 400, message Bad request version ('Ù¦¶`ôÓC\x96\x9f÷8]S\x00')
+2024-03-02 00:30:28,615 - INFO - 168.151.125.115 - - [02/Mar/2024 00:30:28] "[31m[1m\x16\x03\x01\x028\x01\x00\x024\x03\x03!T8iß¾,6\x01<\x89Ýð\x8c7\x19w\x1d\x08I\x8eQû\x87tèò3\x81a\x18º P®\x88m^ â5\x85¤éRz9M\x04î¶\x8at,~©Ï\x8a\\ô=\x93\x91ÛY\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ë\x9a\x9a\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x003\x00+\x00)êê\x00\x01\x00\x00\x1d\x00 \x16eO\x14=¬õ\x00éæ\x84FwW«[Ûh\x1cÙ¦¶`ôÓC\x96\x9f÷8]S\x00[0m" 400 -
+2024-03-02 00:30:28,653 - ERROR - 206.204.46.107 - - [02/Mar/2024 00:30:28] code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ëzz\x00\x00\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00')
+2024-03-02 00:30:28,653 - INFO - 206.204.46.107 - - [02/Mar/2024 00:30:28] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03:\x92ÿw\x9a\x9e^Ç3W\x90\x0dMSG\x91õzF¤ª\x15«Ìl_¯I\x9a@ÃÂ ÇÚ©Èå°î\x07\x05³e±|^wB\x0bÈ\x92\x04­\x1a\x8aûÁj\x1a\x17ÀÂ+H\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ëzz\x00\x00\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00[0m" 400 -
+2024-03-02 00:30:28,907 - ERROR - 185.246.174.30 - - [02/Mar/2024 00:30:28] code 400, message Bad request version ('BbË\x9a;gºëø<Í¤ÐYd^\x91\x00')
+2024-03-02 00:30:28,907 - INFO - 185.246.174.30 - - [02/Mar/2024 00:30:28] "[31m[1m\x16\x03\x01\x028\x01\x00\x024\x03\x03\\°ª_\x0eZ\x17\x17M\x16+8çôYô\x86gX°häe*nJµà\x92\x97`k  Bk'Â\x912<°E\x00U\x86\x8c\x0dBbË\x9a;gºëø<Í¤ÐYd^\x91\x00 [0m" 400 -
+2024-03-02 00:30:35,387 - ERROR - 216.19.201.176 - - [02/Mar/2024 00:30:35] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2024-03-02 00:30:35,387 - INFO - 216.19.201.176 - - [02/Mar/2024 00:30:35] "[31m[1m\x16\x03\x01\x02\x18\x01\x00\x02\x14\x03\x03ç¾ÐÝ¶$ëÈO\x7f\x02ÊVµ\x10¨Î\\\x83ÌÓ"W­À\x1dYx4òä¤ ëAz³)eçÜ÷õÞÞ\x9c&9,ÿÚ|\x9d\x87öÂçý#ª³©\x03\x93\x1e\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01«::\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2024-03-02 00:30:35,388 - ERROR - 168.151.110.206 - - [02/Mar/2024 00:30:35] code 400, message Bad request version ('Õ\x88G/ûMEÃ\x00\x89q\x00')
+2024-03-02 00:30:35,388 - INFO - 168.151.110.206 - - [02/Mar/2024 00:30:35] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03\\¶ï\x07ÈýëQçjR\x1dFÆ£<\x91Î1\x04r\x0c\x97X\x98SVÂ\x0e\x01W\x8c æÆÎ+ð\x0e\x8e%6o\x9aÈxD[Í-=*\x13\x1dÕ\x88G/ûMEÃ\x00\x89q\x00 [0m" 400 -
+2024-03-02 00:30:35,616 - ERROR - 94.176.52.61 - - [02/Mar/2024 00:30:35] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01«')
+2024-03-02 00:30:35,616 - INFO - 94.176.52.61 - - [02/Mar/2024 00:30:35] "[31m[1m\x16\x03\x01\x02\x18\x01\x00\x02\x14\x03\x03\x1fÙª^\x83\x0f\x99\x9c8WÙÄ\x15¥ÖÔÈ\x15ÀV\x16\x8cºx\x1eNKfã\x8dç= SBäÖÿ?\x90tAÆN\x14úi\x91ñ_§gt\x81Ì¶!\x16=]?\x1cÞGÝ\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01«[0m" 400 -
+2024-03-02 00:30:35,649 - ERROR - 176.223.104.61 - - [02/Mar/2024 00:30:35] code 400, message Bad request syntax ('\x16\x03\x01\x02X\x01\x00\x02T\x03\x03hs(ÛnÜ¼V\x10\x82ó\x98ê\x94!')
+2024-03-02 00:30:35,649 - INFO - 176.223.104.61 - - [02/Mar/2024 00:30:35] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03hs(ÛnÜ¼V\x10\x82ó\x98ê\x94![0m" 400 -
+2024-03-02 00:30:42,407 - ERROR - 213.188.75.28 - - [02/Mar/2024 00:30:42] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ë\x1a\x1a\x00\x00\x00\x1b\x00\x03\x02\x00\x02Di\x00\x05\x00\x03\x02h2\x00')
+2024-03-02 00:30:42,407 - INFO - 213.188.75.28 - - [02/Mar/2024 00:30:42] "[31m[1m\x16\x03\x01\x028\x01\x00\x024\x03\x03;g\x9dÏ\x13¾ã\x81á\x92±\x0e´ìRQh-\x9frÚZ1Öê`\x89Ù\x93ókÑ \x1aÖäG²2£\x97Dæ¿l)ôgMùÄß@Ð\x1cM&r¼}N\x14¾<¤\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ë\x1a\x1a\x00\x00\x00\x1b\x00\x03\x02\x00\x02Di\x00\x05\x00\x03\x02h2\x00[0m" 400 -
+2024-03-02 00:30:42,477 - ERROR - 152.39.160.245 - - [02/Mar/2024 00:30:42] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2024-03-02 00:30:42,477 - INFO - 152.39.160.245 - - [02/Mar/2024 00:30:42] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03ñ+ô)Hâ×\x03~\x97\x9dXÌ\x1e¸\x83PÀ\x91Æ-jÙo\x95,¯Ø\x18\x1e\x0cW \x04B\x02Ûs\x04\x0b8%\x1f)|wû\x1f\x0b©|W\\¿ó­\x0cL´O:ý\x02§5\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ëjj\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2024-03-02 00:30:42,610 - ERROR - 119.13.196.46 - - [02/Mar/2024 00:30:42] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ë')
+2024-03-02 00:30:42,610 - INFO - 119.13.196.46 - - [02/Mar/2024 00:30:42] "[31m[1m\x16\x03\x01\x028\x01\x00\x024\x03\x03\x95\x9aÂH¹Ar\x84þ=\x96½Ó°ô@áK«\x15¥\x91ë§f@é÷\x04>\x09Ý ¶^TÒÝÐ}|\x17g3\x9e\\ò9\x93\x8e\x0dÜV¶\x8bÐ\x81¢²\x17§õ×$\x0f\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ë[0m" 400 -
+2024-03-02 00:30:42,718 - ERROR - 119.13.213.123 - - [02/Mar/2024 00:30:42] code 400, message Bad request version ('\x0f;\x03Þùå*\x83czÓH\x80*')
+2024-03-02 00:30:42,719 - INFO - 119.13.213.123 - - [02/Mar/2024 00:30:42] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÜÌNy{;J \x07 \x87°Z\x1f\x11\x90ñ{I[\x14)\x88^Ô£w\x98]\x9d×\x13 ï«Ñ±pÔ±×#\x04`îIjyÍB\x03tá1¾ÉVs<Ö0ÅÄæe\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÚÚ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00þ\x0d\x00º\x00\x00\x01\x00\x01*\x00 ~Ø>´\x83<ÜNdHkN7ujz\x1eR#CÉ\x09\x851\x0d!Y\x8b¥\x1b\x1e9\x00\x90\x96P\x8cÊ\x03FF\x99Ò%\x8aÈÕ¨©\x91l»×\x15Ú]äÜ\x91\x90/\x1cÜaº\x18-ºx«è\x16`\x04\x81bRÆoE¢ë\x0c¬Å¾\x9bÇOp\x1a\x19p¶F\x8f\x95È:?ÂêzwëC\x97\x8eVÄpáD×*«gÏ\x96Â\x8d\x9aÑB\x85Z\x82Ö\x03\x9bÌQÙ\x82¡A'\x0e÷\x0e\x0cfÁ\x15ù\x99 \x03(Úìð\x0bÚd\x1ay,:Ëé\x0d \x0f;\x03Þùå*\x83czÓH\x80*[0m" 400 -
+2024-03-02 00:30:49,404 - ERROR - 213.188.68.48 - - [02/Mar/2024 00:30:49] code 400, message Bad request version ('1Bí\xadíEÆ\x07^')
+2024-03-02 00:30:49,404 - INFO - 213.188.68.48 - - [02/Mar/2024 00:30:49] "[31m[1m\x16\x03\x01\x02X\x01\x00\x02T\x03\x03ÚW\x1c3+\x13êk¡¦\x12eÓÝ¯¥\x0d³´4µ\x81È«òþT5"+ôè ²JÎ\x86\x1a\x94(\x02èæ\x0es\x0e\x05àü$\x13±î#°²Íê\x96\x85/hèC÷\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ëzz\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01Y\x00  É\x18\x9a$\x14Ù§pé³A2\x81¦\x8fÈ\\\x17\x1a\x1d1Bí­íEÆ\x07^[0m" 400 -
+2024-03-02 00:30:49,653 - ERROR - 168.151.131.48 - - [02/Mar/2024 00:30:49] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+2024-03-02 00:30:49,653 - INFO - 168.151.131.48 - - [02/Mar/2024 00:30:49] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ð\x84\x01ÂP\x87´ð!àl\x0f\x045¸æÚ5;\x9dé\x0d\x1bæ¥£w%Ð\x95°^ '¦ép\x084À¡ÞÎ¯5­÷\x1cç\x8fäL\x95;gçeôh\x96ò¬çMÞ\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ªª\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x12\x00\x00\x00#\x00\x00\x003\x00+\x00)JJ\x00\x01\x00\x00\x1d\x00 _Ç$K\x95¢y_\x9e\x9e\x88T§\x1bQ¿\x91\x09v\x879y\x98øÙéEþìwI|\x00-\x00\x02\x01\x01\x00\x0b\x00\x02\x01\x00þ\x0d\x00º\x00\x00\x01\x00\x01Å\x00 ëÝ\x09\x13ËÕø\x1fq²y\x80Æ\x13w©çk\x86¦¿\x14´^ÍíI¸\x1b'\x0fS\x00\x90¥\x88¶G\x0d¾¼#Ô\x07ÍÌ#\x99ÁÊ\x9f¸ýÉb¯U\x0b\x06x\x99É2Ê\x1bøÄÃýÐð¹\x02f\x1b#H?5°¢ë\x0b\x97ð\x99¹\x90Å5õô¤¨Bë\x12.\x03,®\x14\x8dí.â10áOÝ\x15RìÄR\x89¬%\x1eòr=\x13Ó\x95j=\x1aÓ'=ûA\x12\x10ô\x7fZÚ\x9a9Ö\x17\x14!ÞâX\x03\x86V9¤\x1cUÿøF-Ì\x08ãÀã+\x1bK\x1d=\x13!õ{\x15\x16ké\x00\x00\x00\x1a\x00\x18\x00\x00\x15davidloera-flask.info\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00[0m" 400 -
+2024-03-02 00:30:49,780 - ERROR - 206.204.35.71 - - [02/Mar/2024 00:30:49] code 400, message Bad request version ("ø\x8cÎ'§\x04[<\x15\x04V`\x97Å\x9dmK\x7f&È")
+2024-03-02 00:30:49,780 - INFO - 206.204.35.71 - - [02/Mar/2024 00:30:49] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x02\x0bnýF\x08|«.E\x93-\x1e\x0e\x07ZOLÏ\x18ÿ÷Í\x81jî\x82Y\x09Ì"D @¼ ø\x8cÎ'§\x04[<\x15\x04V`\x97Å\x9dmK\x7f&È[0m" 400 -
+2024-03-02 00:30:50,233 - ERROR - 168.151.133.227 - - [02/Mar/2024 00:30:50] code 400, message Bad request version ('ïOg+/\x96\x8d9\x81\x9bÿ_\x9b9R}Â£\x03Ö1Î\x15ðúDi\x00\x05\x00\x03\x02h2\x00')
+2024-03-02 00:30:50,233 - INFO - 168.151.133.227 - - [02/Mar/2024 00:30:50] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03@|,íUÜ\x89©\\\x07kâ\x95\x9e·üB\x9c¼x\x9bà\x06\x88¹ý¨j\x00J\x0e= \x8b7\\r\x0cú\\v´|Û\x1fòv&c!\x1bÁçæ\x18\x9a\x89\x1a\x882×¼rÄ\x9d\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x1a\x1a\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x0b\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x00+\x00)ZZ\x00\x01\x00\x00\x1d\x00 \x94§¬¡61ÆF~\x96a|\x89¥DEî\x8cíÇÎ}aè\x8cº³´b\x16¨J\x00\x12\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00þ\x0d\x00º\x00\x00\x01\x00\x01Ô\x00 \x19äÚ÷ä¬3ôðùé «]\x9fõÈ\x11ù\x1b4\x0bÖjX\x1c\x8c×ô_ 1\x00\x90ôôR¼r\x85ÝQ\x9b\x99;Ú(ææ(pM÷8\x8a£\x87Ù_×Æ¾;\x0f%Òk\\ã\x01\x81!¤¸\x07#¤\x82\x9e\x16T./!¾JÀfsÔ\x1f\x80>\x1bkT\x9f[×¶\x11\x13Ù7×\x9c\x10Ò%\x048\x15À_Ô\x91ªòÍ§Ïæä4¡é0ã)Ë\x8dÖðç\x94î¾\x08â\x05\x0e]\x19Ñ\x15'8\x13ð®ï-\x0bïOg+/\x96\x8d9\x81\x9bÿ_\x9b9R}Â£\x03Ö1Î\x15ðúDi\x00\x05\x00\x03\x02h2\x00[0m" 400 -
+2024-03-02 00:32:30,703 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:443
+ * Running on https://10.138.0.3:443
+2024-03-02 00:32:30,703 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-02 00:32:30,704 - INFO -  * Restarting with stat
+2024-03-02 00:32:30,831 - WARNING -  * Debugger is active!
+2024-03-02 00:32:30,832 - INFO -  * Debugger PIN: 110-063-504
+2024-03-02 00:32:43,293 - INFO - 187.189.248.248 - - [02/Mar/2024 00:32:43] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:32:43,376 - INFO - 187.189.248.248 - - [02/Mar/2024 00:32:43] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:32:43,746 - INFO - 187.189.248.248 - - [02/Mar/2024 00:32:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:32:59,822 - INFO - 187.189.248.248 - - [02/Mar/2024 00:32:59] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:33:00,331 - INFO - 187.189.248.248 - - [02/Mar/2024 00:33:00] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:33:06,478 - INFO - 44.227.127.2 - - [02/Mar/2024 00:33:06] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:33:06,536 - INFO - 44.227.127.2 - - [02/Mar/2024 00:33:06] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:33:06,630 - INFO - 44.227.127.2 - - [02/Mar/2024 00:33:06] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:33:06,688 - INFO - 44.227.127.2 - - [02/Mar/2024 00:33:06] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:33:06,830 - INFO - 44.227.127.2 - - [02/Mar/2024 00:33:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:35:06,581 - INFO - 95.164.158.248 - - [02/Mar/2024 00:35:06] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:35:14,291 - INFO - 170.231.251.96 - - [02/Mar/2024 00:35:14] "[32mHEAD / HTTP/1.1[0m" 302 -
+2024-03-02 00:35:22,302 - INFO - 200.68.167.10 - - [02/Mar/2024 00:35:22] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:35:24,346 - INFO - 200.68.167.10 - - [02/Mar/2024 00:35:24] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:35:25,219 - INFO - 3.86.237.75 - - [02/Mar/2024 00:35:25] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:35:25,313 - INFO - 200.68.167.10 - - [02/Mar/2024 00:35:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:35:25,563 - INFO - 44.204.51.6 - - [02/Mar/2024 00:35:25] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:35:30,123 - INFO - 44.204.51.6 - - [02/Mar/2024 00:35:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:35:30,326 - INFO - 34.234.11.9 - - [02/Mar/2024 00:35:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:35:30,613 - INFO - 186.179.59.17 - - [02/Mar/2024 00:35:30] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2024-03-02 00:35:30,967 - INFO - 100.24.34.195 - - [02/Mar/2024 00:35:30] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2024-03-02 00:35:31,167 - INFO - 34.234.11.9 - - [02/Mar/2024 00:35:31] "[33mGET /favicon.png HTTP/1.1[0m" 404 -
+2024-03-02 00:37:50,589 - INFO - 44.203.38.87 - - [02/Mar/2024 00:37:50] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:37:54,158 - INFO - 44.203.38.87 - - [02/Mar/2024 00:37:54] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:37:56,023 - INFO - 34.248.137.227 - - [02/Mar/2024 00:37:56] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:37:56,448 - INFO - 34.248.137.227 - - [02/Mar/2024 00:37:56] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:37:57,388 - INFO - 34.248.137.227 - - [02/Mar/2024 00:37:57] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-02 00:37:57,816 - INFO - 34.248.137.227 - - [02/Mar/2024 00:37:57] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:37:58,289 - INFO - 34.248.137.227 - - [02/Mar/2024 00:37:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:37:58,431 - INFO - 34.248.137.227 - - [02/Mar/2024 00:37:58] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:37:58,879 - INFO - 34.248.137.227 - - [02/Mar/2024 00:37:58] "[33mHEAD /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-02 00:47:49,226 - INFO - 31.13.127.10 - - [02/Mar/2024 00:47:49] "[32mGET /?fbclid=IwAR394mku0Wm4w446BLq4YJR13BEdFEdro2ygJg4BR2KcJGORR3tQQZ6VSNU HTTP/1.1[0m" 302 -
+2024-03-02 00:47:49,651 - INFO - 31.13.127.10 - - [02/Mar/2024 00:47:49] "GET /login HTTP/1.1" 200 -
+2024-03-02 00:48:14,483 - INFO - 31.13.103.117 - - [02/Mar/2024 00:48:14] "GET /login HTTP/1.1" 200 -

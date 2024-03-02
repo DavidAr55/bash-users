@@ -1,7 +1,12 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session, send_file
+from ssl import SSLContext
+from flask import Flask, render_template, request, redirect, url_for, flash, session, send_file, jsonify
 from flask_mysqldb import MySQL
 from datetime import datetime
 import logging
+import subprocess
+import re
+import os
+from ansi2html import Ansi2HTMLConverter
 
 app = Flask(__name__)
 
@@ -10,8 +15,8 @@ logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s 
 
 # MySql Connection
 app.config['MYSQL_HOST']     = 'localhost'
-app.config['MYSQL_USER']     = 'root'
-app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_USER']     = 'flask'
+app.config['MYSQL_PASSWORD'] = 'flaskServer2024'
 app.config['MYSQL_DB']       = 'bash_users'
 mysql = MySQL(app)
 
@@ -55,10 +60,20 @@ def verify_login():
 
 @app.route('/logout', methods=['POST'])
 def logout():
+    # Verificar si el usuario ha iniciado sesión antes de intentar cerrar la sesión
+    if 'user_name' in session:
+        logging.info('Cierre de sesión de: %s', session['user_name'])
+        flash('¡Has cerrado sesión correctamente!', 'success')
+    else:
+        # Si el usuario no ha iniciado sesión, simplemente redirigirlo a la página de inicio de sesión
+        flash('No has iniciado sesión', 'warning')
+
+    # Limpiar la sesión, independientemente de si el usuario ha iniciado sesión o no
     session.clear()
-    logging.info('Cierre de sesión de: %s', session['user_name'])
-    flash('¡Has cerrado sesión correctamente!', 'success')
+
+    # Redirigir al usuario a la página de inicio de sesión
     return redirect(url_for('login'))
+
 
 
 @app.route('/home')
@@ -131,29 +146,106 @@ def delete_user(id):
     mysql.connection.commit()
     cur.close()
     
-    logging.info('El usuario con id "%s" fue eliminado de manera exitosa', user_name)
+    logging.info('El usuario con id "%s" fue eliminado de manera exitosa', id)
     flash('Usuario eliminado')
     return redirect(url_for('Index'))
 
 
 @app.route('/terminal')
 def terminal():
-    return render_template('terminal.html')
+    try:
+        # Ejecutar el comando 'neofetch' y capturar su salida
+        result = subprocess.run(['neofetch'], capture_output=True, text=True)
+        output = result.stdout
+        
+        # Eliminar los caracteres no deseados al principio y al final del output
+        output_cleaned = re.sub(r'^\x1b\[.*?m|\x1b\[0m$', '', output, flags=re.M)
+        
+        # Convertir los códigos de escape ANSI a HTML
+        conv = Ansi2HTMLConverter()
+        output_html = conv.convert(output_cleaned)
 
+        return render_template('terminal.html', output=output_html)
+    except Exception as e:
+        # Manejar cualquier excepción que pueda ocurrir durante la ejecución del comando
+        app.logger.error("Error al ejecutar el comando 'neofetch': %s", str(e))
+        # Devolver un mensaje de error genérico al usuario
+        return "Ocurrió un error al ejecutar el comando 'neofetch'. Por favor, inténtalo de nuevo más tarde."
+
+
+import subprocess
+from flask import jsonify
 
 @app.route('/execute/bash/command', methods=['POST'])
 def execute_bash_command():
-    return 1
+    # Obtener el comando enviado desde el formulario
+    command = request.form.get('fname')
+
+    try:
+        # Ejecutar el comando y capturar su salida
+        result = subprocess.run([command], shell=True, capture_output=True, text=True)
+
+        # Verificar el código de retorno del proceso
+        if result.returncode != 0:
+            # Si el código de retorno no es 0, hubo un error
+            error = result.stderr.strip()
+
+            # Eliminar los caracteres no deseados al principio y al final del output
+            error_cleaned = re.sub(r'^\x1b\[.*?m|\x1b\[0m$', '', error, flags=re.M)
+            
+            # Convertir los códigos de escape ANSI a HTML
+            conv_error = Ansi2HTMLConverter()
+            error_html = conv_error.convert(error_cleaned)
+
+            return jsonify({'error': error_html})
+        
+        # Si el código de retorno es 0, el comando se ejecutó correctamente
+        output = result.stdout
+
+        # Eliminar los caracteres no deseados al principio y al final del output
+        output_cleaned = re.sub(r'^\x1b\[.*?m|\x1b\[0m$', '', output, flags=re.M)
+
+        # Convertir los códigos de escape ANSI a HTML
+        conv = Ansi2HTMLConverter()
+        output_html = conv.convert(output_cleaned)
+
+        # Devolver la salida como una respuesta JSON
+        return jsonify({'output': output_html})
+    except Exception as e:
+        # Manejar cualquier excepción que pueda ocurrir durante la ejecución del comando
+        app.logger.error("Error al ejecutar el comando en la terminal: %s", str(e))
+        # Devolver un mensaje de error como respuesta JSON
+        return jsonify({'error': 'Ocurrió un error al ejecutar el comando en la terminal'})
 
 
 @app.route('/logs')
 def logs():
-    with open('app.log', 'r') as f:
-        log_content = f.readlines()
-        log_content.reverse()
-    return render_template('logs.html', log_content=log_content)
+    try:
+        with open('app.log', 'r') as f:
+            log_content = f.readlines()
+            log_content.reverse()
+            log_content = '\n'.join(log_content)  # Unir las líneas en una sola cadena
+        return render_template('logs.html', log_content=log_content)
+    except Exception as e:
+        # Registra la excepción en el registro del servidor
+        app.logger.error("Error en la vista de logs: %s", str(e))
+        # Devuelve un mensaje de error genérico al usuario
+        return "Ocurrió un error al cargar los registros. Por favor, inténtalo de nuevo más tarde."
 
+
+
+# Rutas a los archivos de certificado y clave privada
+certfile = '/etc/letsencrypt/live/davidloera-flask.info/fullchain.pem'
+keyfile = '/etc/letsencrypt/live/davidloera-flask.info/privkey.pem'
+
+# Verificar si los archivos de certificado y clave privada existen
+if os.path.exists(certfile) and os.path.exists(keyfile):
+    # Crear un contexto SSL y cargar el certificado y la clave privada
+    ssl_context = SSLContext()
+    ssl_context.load_cert_chain(certfile, keyfile)
+else:
+    # Si los archivos no existen, imprimir un mensaje de error
+    print("No se encontraron los archivos de certificado y clave privada")
 
 if __name__ == '__main__':
-    logging.info('Servidor iniciado')
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=443, debug=True, ssl_context=ssl_context)
