@@ -14,20 +14,18 @@
 
         .console {
             width: 80%;
-            height: 600px;
             margin: auto;
             padding: 20px;
             background-color: #272727;
-            color: white;
             font-family: monospace;
-            white-space: pre-wrap;
-            overflow-x: auto;
-            border-radius: 15px;
+            white-space: pre-wrap; /* Para que los saltos de línea se muestren correctamente */
+            overflow-x: auto; /* Barra de desplazamiento horizontal si es necesario */
+            border-radius: 10px;
         }
 
-        .console pre {
-            color: white;
-        }
+	pre {
+	    color: white;
+	}
     </style>
 </head>
 <body>
@@ -36,11 +34,9 @@
 
     <h1 class="text-center mt-5">Logs from Linux/Debian 12</h1>
     <div class="console">
-        <pre>
-            {% for line in log_content %}
-                {{ line|trim }}
-            {% endfor %}
-        </pre>
+        <pre>{{ log_content }}</pre><br>
     </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

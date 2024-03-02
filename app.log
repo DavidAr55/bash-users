@@ -6,7 +6,7 @@
 2024-02-29 22:45:49,137 - INFO -  * Debugger PIN: 785-350-830
 2024-02-29 22:46:02,089 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:02] "[32mPOST /logout HTTP/1.1[0m" 302 -
 2024-02-29 22:46:02,095 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:02] "GET /login HTTP/1.1" 200 -
-2024-02-29 22:46:07,702 - INFO - Intento de inicio de sesión de usuario: david
+2024-02-29 22:46:07,702 - INFO - Intento de inicio de sesiï¿½n de usuario: david
 2024-02-29 22:46:07,708 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:07] "[32mPOST /verify_login HTTP/1.1[0m" 302 -
 2024-02-29 22:46:08,020 - INFO - 127.0.0.1 - - [29/Feb/2024 22:46:08] "GET /home HTTP/1.1" 200 -
 2024-02-29 22:53:19,381 - INFO -  * Detected change in 'D:\\xampp\\htdocs\\bash-users\\app.py', reloading
@@ -62,4 +62,3 @@
 2024-02-29 23:09:22,466 - INFO -  * Debugger PIN: 785-350-830
 2024-02-29 23:09:23,824 - INFO - 127.0.0.1 - - [29/Feb/2024 23:09:23] "GET /logs HTTP/1.1" 200 -
 2024-02-29 23:09:42,376 - INFO - 127.0.0.1 - - [29/Feb/2024 23:09:42] "GET /logs HTTP/1.1" 200 -
-2024-02-29 23:11:47,056 - INFO - 127.0.0.1 - - [29/Feb/2024 23:11:47] "GET /logs HTTP/1.1" 200 -
