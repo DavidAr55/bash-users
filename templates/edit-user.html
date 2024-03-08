@@ -26,22 +26,22 @@
                     <div class="card-body">
                         <form action="/update/{{ user.0 }}" method="POST">
                             <div class="form-group">
-                                <label for="username">Nombre de Usuario</label>
+                                <label for="username">User name</label>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="Introduce tu nombre de usuario" value="{{ user.1 }}">
                             </div>
                             <div class="form-group">
-                                <label for="password">Contraseña</label>
+                                <label for="password">Password</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Introduce tu contraseña" value="{{ user.2 }}">
                             </div>
                             <div class="form-group">
-                                <label for="level">Nivel de Usuario Linux</label>
-                                <select class="form-control" id="level" name="level">
-                                    <option value="0" {% if user.3 == '0' %} selected {% endif %}>Usuario normal</option>
-                                    <option value="1" {% if user.3 == '1' %} selected {% endif %}>Usuario privilegiado</option>
-                                    <option value="2" {% if user.3 == '2' %} selected {% endif %}>Superusuario (root)</option>
+                                <label for="level">Linux User Level</label>
+                                <select class="form-control" id="level" name="level">    
+				{% for group in groups %}
+                                   <option value="{{ group.0 }}" {% if user.3 == group.0 %} selected {% endif %}>{{ group.1 }}</option>
+                                {% endfor %}
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-primary">Edit user</button>
                         </form>
                     </div>
                 </div>

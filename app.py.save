@@ -3,7 +3,6 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from flask_mysqldb import MySQL
 from datetime import datetime
 from ansi2html import Ansi2HTMLConverter
-import crypt
 import pytz
 import logging
 import subprocess
@@ -15,7 +14,6 @@ app = Flask(__name__)
 # Settings
 app.secret_key = 'mysecretkey'
 tz = pytz.timezone('America/Mexico_City')
-pn = re.compile(r'\d')
 
 # Configuración del logger
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -95,7 +93,7 @@ def logout():
 def Index():
     # Seleccionamos todo lo referente a los usuarios
     cur = mysql.connection.cursor()
-    cur.execute('SELECT u.id, u.user_name, g.group_name, u.updated_at, u.created_at FROM users u JOIN groups g ON u.user_group=g.id ORDER BY u.id DESC')
+    cur.execute('SELECT u.id, u.user_name, g.group_name, u.updated_at, u.created_at FROM users u JOIN groups g ON u.user_group=g.id')
     users = cur.fetchall()
     cur.close()
 
@@ -111,36 +109,9 @@ def Index():
 @app.route('/add_user', methods=['POST'])
 def add_user():
     if request.method == 'POST':
-
-        # Obtener los datos del formulario de inicio de sesión
-        user_name = request.form.get('username', '').lower().replace(' ', '-')
-        user_password = request.form.get('password', '').strip()
-        user_group = request.form.get('level', '').strip()
-
-        # Verificar que los campos no estén vacíos
-        if not user_name or not user_password or not user_group:
-            flash('Todos los campos son obligatorios', 'danger')
-            return redirect(url_for('Index'))
-
-        if not user_name.isalpha():
-            flash('El nombre de usuario solo puede contener letras', 'danger')
-            return redirect(url_for('Index'))
-
-        # Limpieza de texto: Reemplazar "<>" por caracteres seguros
-        user_name = user_name.replace('<', '').replace('>', '')
-
-        # Validar que la contraseña cumpla con los criterios permitidos
-        if not all(char.isalnum() or char in "!@%&*?" for char in user_password):
-            flash('La contraseña solo puede contener letras mayúsculas y minúsculas, números, y los siguientes caracteres especiales: !@%&*?', 'danger')
-            return redirect(url_for('Index'))
-
-        # Validar que el grupo de usuario sea un valor numérico entre 1 y 4
-        if not user_group.isdigit() or not 1 <= int(user_group) <= 4:
-            flash('El grupo que ingresaste no exite', 'danger')
-            return redirect(url_for('Index'))
-
-        # cifrar contraseña
-        encrypted_password = crypt.crypt(user_password)
+        user_name     = request.form['username']
+        user_password = request.form['password']
+        user_group    = request.form['level']
 
         # Obtener el ID del grupo seleccionado
         user_group_id = int(user_group)
@@ -152,12 +123,14 @@ def add_user():
         cur.close()
 
 	# Darle formato al grupo
-        fg = 'root' if user_group_id == 2 else group_name.lower().replace(' ', '-')
+        if user_group_id == 2:
+            format_user_group = 'root'
+        else:
+            format_user_group = group_name.lower().replace(' ', '-')
 
         # Crear el nuevo usuario en el sistema
         try:
-            subprocess.run(['useradd', '-m', '-p', encrypted_password, '-G', fg, user_name], check=True)
-            subprocess.run(['chsh', '-s', '/bin/bash', user_name])
+            subprocess.run(['useradd', '-m', '-p', user_password, '-G', format_user_group, user_name], check=True)
             logging.info('Nuevo usuario "%s" agregado exitosamente', user_name)
             flash('Usuario agregado correctamente')
         except subprocess.CalledProcessError as e:
@@ -195,33 +168,9 @@ def edit_user(id):
 @app.route('/update/<id>', methods=['POST'])
 def update_user(id):
     if request.method == 'POST':
-
-        # Obtener los datos del formulario de inicio de sesión
-        user_name = request.form.get('username', '').lower().replace(' ', '-')
-        user_password = request.form.get('password', '').strip()
-        user_group = request.form.get('level', '').strip()
-
-        # Verificar que los campos no estén vacíos
-        if not user_name or not user_password or not user_group:
-            flash('Todos los campos son obligatorios', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
-
-        if not user_name.isalpha():
-            flash('El nombre de usuario solo puede contener letras', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
-
-        # Limpieza de texto: Reemplazar "<>" por caracteres seguros
-        user_name = user_name.replace('<', '').replace('>', '')
-
-        # Validar que la contraseña cumpla con los criterios permitidos
-        if not all(char.isalnum() or char in "!@%&*?" for char in user_password):
-            flash('La contraseña solo puede contener letras mayúsculas y minúsculas, números, y los siguientes caracteres especiales: !@%&*?', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
-
-        # Validar que el grupo de usuario sea un valor numérico entre 1 y 4
-        if not user_group.isdigit() or not 1 <= int(user_group) <= 4:
-            flash('El grupo que ingresaste no exite', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
+        user_name     = request.form['username']
+        user_password = request.form['password']
+        user_group    = request.form['level']
 
         # Obtener el ID del grupo seleccionado
         user_group_id = int(user_group)
@@ -232,47 +181,30 @@ def update_user(id):
         group_name = cur.fetchone()[0]
         cur.close()
 
-        # Optenemos el usuario anterior
+        # Optenemos la contraseña antigua
         cur = mysql.connection.cursor()
-        cur.execute('SELECT u.user_name, u.user_password, g.group_name FROM users u JOIN groups g ON u.user_group=g.id WHERE u.id = %s', (id,))
-        old_user = cur.fetchone()
+        cur.execute('SELECT u.user_name, u.user_password, g.group_name FROM users u WHERE id = %s', (id,))
+        old_user = cur.fetchall()
         cur.close()
 
-        fg = 'root' if user_group_id == 2 else group_name.lower().replace(' ', '-')
+        # Darle formato al grupo
+        format_user_group = 'root' if user_group_id == 2 else group_name.lower().replace(' ', '-')
+        
         u = user_name if user_name != old_user[0] else old_user[0]
         p = user_password if user_password != old_user[1] else old_user[1]
-        fu = u.lower().replace(' ', '-')
-        pc = crypt.crypt(p)
-        # Preparamos el antiguo nombre del grupo
-        old_fg = 'root' if old_user[2].lower().replace(' ', '-') == 'administrator-(root)' else old_user[2].lower().replace(' ', '-')
+        g = user_group if user_group != old_user[2] else old_user[2]
 
-        if pn.search(fu): 
-            logging.error('Error, los nombres de usuario no pueden contener numeros, usuario "%s" invalido', user_name)
-            flash('Error, los nombres de usuario no pueden contener numeros.', 'danger')
-
-            return redirect(url_for('edit_user'))
-
-        print(f"old user_name:  {old_user[0]} || new user_name:  {fu}")
-        print(f"old user_pass:  {old_user[1]} || new_user_pass:  {p}")
-        print(f"old user_group: {old_fg}      || new_user_group: {fg}")
-
-	# actualizar el usuario
+	# actualizar nombre y/o grupo #
         try:
             # Actualizar el nombre del usuario
-            if old_user[0] != fu:
-                subprocess.run(['usermod', '-l', fu, old_user[0]], check=True)
-                subprocess.run(['mv', '/home/'+old_user[0], '/home/'+fu], check=True)
-                subprocess.run(['groupmod', '-n', fu, old_user[0]])
-
+            subprocess.run(['usermod', '-l', user_name, old_user[0]], check=True)
+            
             # Actualizar el grupo del usuario
-            if old_fg != fg:
-                subprocess.run(['usermod', '-aG', fg, fu], check=True)
-                subprocess.run(['deluser',fu, old_fg], check=True)
-
-            # Actualizar la contraseña del usuario
-            if p != old_user[1]:
-                subprocess.run(['echo', f'{fu}:{pc}', '|', 'sudo', 'chpasswd'], check=True, shell=True)
-
+            subprocess.run(['usermod', '-g', format_user_group, old_user[2]], check=True)
+            
+            # Actualizar la contraseña del usuario (si es necesario)
+            if user_password:
+                subprocess.run(['echo', user_password, '|', 'sudo', 'passwd', '--stdin', user_name], shell=True, check=True)
         except subprocess.CalledProcessError as e:
             logging.error('Error al actualizar el usuario: %s', str(e))
             flash('Error al actualizar el usuario. Inténtalo de nuevo.', 'danger')
@@ -283,7 +215,7 @@ def update_user(id):
         updated_at = now.strftime("%Y-%m-%d %H:%M:%S")
         
         cur = mysql.connection.cursor()
-        cur.execute("UPDATE users SET user_name = %s, user_password = %s, user_group = %s, updated_at = %s WHERE id = %s", (fu, user_password, user_group, updated_at, id))
+        cur.execute("UPDATE users SET user_name = %s, user_password = %s, user_group = %s, updated_at = %s WHERE id = %s", (user_name, user_password, user_group, updated_at, id))
         mysql.connection.commit()
         cur.close()
         
@@ -294,41 +226,14 @@ def update_user(id):
 
 @app.route('/delete/<string:id>')
 def delete_user(id):
-    # Obtener el nombre de usuario y el grupo asociado
     cur = mysql.connection.cursor()
-    cur.execute('SELECT u.user_name, g.group_name FROM users u JOIN groups g ON u.user_group=g.id WHERE u.id = %s', (id,))
-    user_data = cur.fetchone()
+    cur.execute('DELETE FROM users WHERE id = {0}'.format(id))
+    mysql.connection.commit()
     cur.close()
-
-    if user_data:
-        user_name = user_data[0]
-        user_group = user_data[1]
-
-        # Eliminar al usuario del servidor
-        try:
-            subprocess.run(['deluser', '--remove-home', user_name], check=True)
-            # subprocess.run(['groupdel', user_name], check=True)
-            subprocess.run(['rm', '-r', '/home/'+user_name], check=True)
-            logging.info('Usuario "%s" eliminado del servidor', user_name)
-        except subprocess.CalledProcessError as e:
-            logging.error('Error al eliminar al usuario "%s" del servidor: %s', user_name, str(e))
-
-        # Eliminar al usuario de la base de datos
-        try:
-            cur = mysql.connection.cursor()
-            cur.execute('DELETE FROM users WHERE id = %s', (id,))
-            mysql.connection.commit()
-            cur.close()
-            logging.info('Usuario con ID "%s" eliminado de la base de datos', id)
-            flash('Usuario eliminado')
-        except Exception as e:
-            logging.error('Error al eliminar al usuario con ID "%s" de la base de datos: %s', id, str(e))
-            flash('Error al eliminar al usuario. Inténtalo de nuevo.', 'danger')
-    else:
-        flash('El usuario no existe', 'danger')
-
+    
+    logging.info('El usuario con id "%s" fue eliminado de manera exitosa', id)
+    flash('Usuario eliminado')
     return redirect(url_for('Index'))
-
 
 
 @app.route('/terminal')
@@ -396,68 +301,6 @@ def execute_bash_command():
         app.logger.error("Error al ejecutar el comando en la terminal: %s", str(e))
         # Devolver un mensaje de error como respuesta JSON
         return jsonify({'error': 'Ocurrió un error al ejecutar el comando en la terminal'})
-
-
-@app.route('/resources')
-def resource_usage():
-    try:
-        # Consultar la base de datos para obtener los datos de rendimiento
-        cur = mysql.connection.cursor()
-        cur.execute("SELECT timestamp, cpu_usage, memory_usage, disk_usage, network_traffic_in, network_traffic_out FROM server_resources ORDER BY timestamp DESC LIMIT 25")
-        data = cur.fetchall()
-        cur.close()
-
-        # Preparar los datos para Chart.js
-        labels = []
-        cpu_usages = []
-        memory_usages = []
-        disk_usages = []
-        network_traffic_ins = []
-        network_traffic_outs = []
-
-        for row in reversed(data):
-            labels.append(row[0].strftime("%H:%M:%S"))
-            cpu_usages.append(row[1])
-            memory_usages.append(row[2])
-            disk_usages.append(row[3])
-            network_traffic_ins.append(row[4])
-            network_traffic_outs.append(row[5])
-
-        # Renderizar la plantilla HTML con Chart.js
-        return render_template('resources.html', labels=labels, cpu_usages=cpu_usages, memory_usages=memory_usages, disk_usages=disk_usages, network_traffic_ins=network_traffic_ins, network_traffic_outs=network_traffic_outs)
-    except Exception as e:
-        return str(e)
-
-
-@app.route('/resources/ajax')
-def resource_usage_ajax():
-    try:
-        # Consultar la base de datos para obtener los datos de rendimiento
-        cur = mysql.connection.cursor()
-        cur.execute("SELECT timestamp, cpu_usage, memory_usage, disk_usage, network_traffic_in, network_traffic_out FROM server_resources ORDER BY timestamp DESC LIMIT 25")
-        data = cur.fetchall()
-        cur.close()
-
-        # Preparar los datos para Chart.js
-        labels = []
-        cpu_usages = []
-        memory_usages = []
-        disk_usages = []
-        network_traffic_ins = []
-        network_traffic_outs = []
-
-        for row in reversed(data):
-            labels.append(row[0].strftime("%H:%M:%S"))
-            cpu_usages.append(row[1])
-            memory_usages.append(row[2])
-            disk_usages.append(row[3])
-            network_traffic_ins.append(row[4])
-            network_traffic_outs.append(row[5])
-
-        # Devolver los datos en formato JSON
-        return jsonify(labels=labels, cpu_usages=cpu_usages, memory_usages=memory_usages, disk_usages=disk_usages, network_traffic_ins=network_traffic_ins, network_traffic_outs=network_traffic_outs)
-    except Exception as e:
-        return jsonify(error=str(e)), 500
 
 
 @app.route('/logs')

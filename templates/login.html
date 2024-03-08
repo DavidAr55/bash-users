@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Login</title>
+    
+    {% include "components/head.html" %}
+
 </head>
 <body>
     <div class="container mt-5">
@@ -24,12 +26,12 @@
                     <div class="card-body">
                         <form method="POST" action="/verify_login">
                             <div class="form-group">
-                                <label for="user_name">Nombre de usuario:</label>
-                                <input type="text" name="user_name" class="form-control" required>
+                                <label for="user_name">User:</label>
+                                <input type="text" name="user_name" value="root" class="form-control" required readonly>
                             </div>
                             <div class="form-group">
-                                <label for="user_password">Contraseña:</label>
-                                <input type="password" name="user_password" class="form-control" required>
+                                <label for="user_password">Password:</label>
+                                <input type="password" name="user_password" value="5cAb!8orSs]0" class="form-control" required readonly>
                             </div>
                             <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                         </form>

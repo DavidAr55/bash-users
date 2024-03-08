@@ -46,15 +46,12 @@
                             <div class="form-group">
 			        <label for="level">Linux User Level</label>
 				<select class="form-control" id="level" name="level">
-        			    <option value="0">Administrator (root)</option>
-        			    <option value="1">Moderator</option>
-        			    <option value="2">Regular User</option>
- 		 		    <option value="3">Advanced User</option>
-        			    <option value="4">Guest User</option>
-        			    <option value="5">Anonymous User</option>
-				</select>
+                                {% for group in groups %}
+                                    <option value="{{ group.0 }}">{{ group.1 }}</option>
+  			        {% endfor %}
+                                </select>
 			    </div>
-                            <button type="submit" class="btn btn-primary">Useradd</button>
+                            <button type="submit" class="btn btn-primary">Add new user</button>
                         </form>
                     </div>
                 </div>
@@ -76,8 +73,7 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>User name</th>
-                                        <th>Password</th>
-                                        <th>Level</th>
+                                        <th>Group</th>
                                         <th>Created at</th>
                                         <th>Updated at</th>
                                         <th>Actions</th>
@@ -92,11 +88,14 @@
                                         <td>{{ user.2 }}</td>
                                         <td>{{ user.3 }}</td>
                                         <td>{{ user.4 }}</td>
-                                        <td>{{ user.5 }}</td>
                                         <td style="display: flex;">
+					{% if user.1 != 'a21110121' and user.1 != 'root' %}
                                             <a href="/edit/{{ user.0 }}" class="btn btn-primary mr-2">Edit</a>
                                             <a href="/delete/{{ user.0 }}" class="btn btn-danger">Delete</a>
-                                        </td>
+                                        {% else %}
+					    <strong style="color: #ccc;">This user can't be modified</strong>
+					{% endif %}
+					</td>
                                     </tr>
                                     {% endfor %}
                                 </tbody>
@@ -107,6 +106,8 @@
             </div>
         </div>
     </div>
+
+    {% include "components/footer.html" %}
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
