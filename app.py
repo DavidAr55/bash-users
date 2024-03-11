@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from flask_mysqldb import MySQL
 from datetime import datetime
 from ansi2html import Ansi2HTMLConverter
+import bcrypt
 import crypt
 import pytz
 import logging
@@ -21,12 +22,73 @@ pn = re.compile(r'\d')
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.Formatter.converter = lambda *args: datetime.now(tz).timetuple()
 
-# MySql Connection
-app.config['MYSQL_HOST']     = 'localhost'
-app.config['MYSQL_USER']     = 'flask'
-app.config['MYSQL_PASSWORD'] = 'flaskServer2024'
-app.config['MYSQL_DB']       = 'bash_users'
+# Obtener los valores de las variables de entorno
+mysql_host = os.environ.get('FLASK_MYSQL_HOST')
+mysql_user = os.environ.get('FLASK_MYSQL_USER')
+mysql_pass = os.environ.get('FLASK_MYSQL_PASS')
+mysql_db = os.environ.get('FLASK_MYSQL_DB')
+
+# Utilizar los valores en tu aplicación Flask
+app.config['MYSQL_HOST'] = mysql_host
+app.config['MYSQL_USER'] = mysql_user
+app.config['MYSQL_PASSWORD'] = mysql_pass
+app.config['MYSQL_DB'] = mysql_db
+
 mysql = MySQL(app)
+
+
+def name_format(str):
+    # Reemplazar guiones por espacios
+    str = str.replace('-', ' ')
+    # Quitar caracteres no deseados y convertir a minúsculas
+    str = re.sub(r'[^a-zA-Z\s-]', '', str).lower()
+    # Reemplazar múltiples espacios por uno solo
+    str = re.sub(r'\s+', ' ', str)
+    # Reemplazar espacios por guiones y asegurarse de que solo haya uno
+    parts = str.split()
+    str = '-'.join(parts)
+
+    return str
+
+
+#    Funciones para configurar a los usuarios root   #
+def add_sudo_user(user_name):
+    try:
+        # Agregar el usuario al grupo sudo
+        subprocess.run(['usermod', '-aG', 'sudo', user_name], check=True)
+        print(f'Se agregaron permisos de superusuario al usuario "{user_name}" correctamente.')
+
+        # Abrir el archivo sudoers en modo de escritura
+        with open('/etc/sudoers', 'a') as f:
+            # Escribir la línea para otorgar permisos al usuario
+            f.write(f'{user_name} ALL=(ALL:ALL) NOPASSWD: ALL\n')
+        print(f'Se otorgaron permisos de sudo a {user_name} correctamente.')
+    except Exception as e:
+        print(f'Error al otorgar permisos de sudo a {user_name}: {e}')
+
+
+def drop_sudo(user_name):
+    try:
+        # Quitar al usuario del grupo sudo
+        subprocess.run(['deluser', user_name, 'sudo'], check=True)
+        print(f'Se eliminaron los permisos de superusuario del usuario "{user_name}" correctamente.')
+
+        # Abrir el archivo sudoers en modo de lectura
+        with open('/etc/sudoers', 'r') as f:
+            lines = f.readlines()
+
+        # Filtrar las líneas que contienen el nombre de usuario en el archivo sudoers
+        lines = [line for line in lines if not line.startswith(user_name + ' ')]
+
+        # Volver a escribir el archivo sudoers sin las líneas que contienen el nombre de usuario
+        with open('/etc/sudoers', 'w') as f:
+            f.writelines(lines)
+
+        print(f'Se eliminó la entrada del usuario {user_name} del archivo sudoers correctamente.')
+    except Exception as e:
+        print(f'Error al eliminar los permisos de sudo del usuario {user_name}: {e}')
+
+
 
 
 @app.route('/')
@@ -113,21 +175,17 @@ def add_user():
     if request.method == 'POST':
 
         # Obtener los datos del formulario de inicio de sesión
-        user_name = request.form.get('username', '').lower().replace(' ', '-')
+        user_name     = request.form.get('username', '').strip()
         user_password = request.form.get('password', '').strip()
-        user_group = request.form.get('level', '').strip()
+        user_group    = request.form.get('level', '').strip()
 
         # Verificar que los campos no estén vacíos
         if not user_name or not user_password or not user_group:
             flash('Todos los campos son obligatorios', 'danger')
             return redirect(url_for('Index'))
 
-        if not user_name.isalpha():
-            flash('El nombre de usuario solo puede contener letras', 'danger')
-            return redirect(url_for('Index'))
-
-        # Limpieza de texto: Reemplazar "<>" por caracteres seguros
-        user_name = user_name.replace('<', '').replace('>', '')
+        # Le damos formato al nombre de usuario
+        user_name = name_format(user_name)
 
         # Validar que la contraseña cumpla con los criterios permitidos
         if not all(char.isalnum() or char in "!@%&*?" for char in user_password):
@@ -164,32 +222,44 @@ def add_user():
             logging.error('Error al agregar el usuario: %s', str(e))
             flash('Error al agregar el usuario. Inténtalo de nuevo.', 'danger')
 
+        # Otorgar permisos de superusuario si el grupo es "root"
+        if user_group_id == 2:
+            add_sudo_user(user_name)
+
         # Insertar el nuevo usuario en la base de datos
         now = datetime.now(tz)
         created_at = now.strftime("%Y-%m-%d %H:%M:%S")
-        
+
+        # Generar el hash de la contraseña y el salt
+        salt = bcrypt.gensalt()
+        hashed_password = bcrypt.hashpw(user_password.encode('utf-8'), salt)
+
         cur = mysql.connection.cursor()
-        cur.execute('INSERT INTO users (user_name, user_password, user_group, created_at) VALUES (%s, %s, %s, %s)', (user_name, user_password, user_group, created_at))
+        cur.execute('INSERT INTO users (user_name, hashed_password, salt, user_group, created_at) VALUES (%s, %s, %s, %s, %s)', (user_name, hashed_password, salt, user_group, created_at))
         mysql.connection.commit()
         cur.close()
 
         return redirect(url_for('Index'))
 
 
-@app.route('/edit/<id>')
+@app.route('/edit/<int:id>')
 def edit_user(id):
     cur = mysql.connection.cursor()
     cur.execute('SELECT * FROM users WHERE id = %s', (id,))
-    data = cur.fetchall()
+    data = cur.fetchone()  # Utilizamos fetchone() en lugar de fetchall()
     cur.close()
+
+    if data is None:
+        flash('El usuario no existe', 'danger')
+        return redirect(url_for('Index'))
 
     # Seleccionamos los grupos para mostrar
     cur = mysql.connection.cursor()
     cur.execute('SELECT id, group_name FROM groups')
     groups = cur.fetchall()
     cur.close()
-    
-    return render_template('edit-user.html', user=data[0], groups=groups)
+
+    return render_template('edit-user.html', user=data, groups=groups)
 
 
 @app.route('/update/<id>', methods=['POST'])
@@ -197,31 +267,30 @@ def update_user(id):
     if request.method == 'POST':
 
         # Obtener los datos del formulario de inicio de sesión
-        user_name = request.form.get('username', '').lower().replace(' ', '-')
+        user_name     = request.form.get('username', '').strip()
         user_password = request.form.get('password', '').strip()
-        user_group = request.form.get('level', '').strip()
+        user_group    = request.form.get('level', '').strip()
 
         # Verificar que los campos no estén vacíos
-        if not user_name or not user_password or not user_group:
+        if not user_name or not user_group:
             flash('Todos los campos son obligatorios', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
+            return redirect(url_for('edit_user', id=id))
 
-        if not user_name.isalpha():
-            flash('El nombre de usuario solo puede contener letras', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
+        # Si la contraseña esta vacia, no la actualizamos
+        update_pass = False if not user_password else True
 
-        # Limpieza de texto: Reemplazar "<>" por caracteres seguros
-        user_name = user_name.replace('<', '').replace('>', '')
+        # Le damos formato al nombre de usuario
+        user_name = name_format(user_name)
 
         # Validar que la contraseña cumpla con los criterios permitidos
         if not all(char.isalnum() or char in "!@%&*?" for char in user_password):
             flash('La contraseña solo puede contener letras mayúsculas y minúsculas, números, y los siguientes caracteres especiales: !@%&*?', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
+            return redirect(url_for('edit_user', id=id))
 
         # Validar que el grupo de usuario sea un valor numérico entre 1 y 4
         if not user_group.isdigit() or not 1 <= int(user_group) <= 4:
             flash('El grupo que ingresaste no exite', 'danger')
-            return redirect(url_for('edit_user', id=user_group))
+            return redirect(url_for('edit_user', id=id))
 
         # Obtener el ID del grupo seleccionado
         user_group_id = int(user_group)
@@ -234,17 +303,17 @@ def update_user(id):
 
         # Optenemos el usuario anterior
         cur = mysql.connection.cursor()
-        cur.execute('SELECT u.user_name, u.user_password, g.group_name FROM users u JOIN groups g ON u.user_group=g.id WHERE u.id = %s', (id,))
+        cur.execute('SELECT u.user_name, u.hashed_password, u.salt, g.group_name FROM users u JOIN groups g ON u.user_group=g.id WHERE u.id = %s', (id,))
         old_user = cur.fetchone()
         cur.close()
 
         fg = 'root' if user_group_id == 2 else group_name.lower().replace(' ', '-')
         u = user_name if user_name != old_user[0] else old_user[0]
-        p = user_password if user_password != old_user[1] else old_user[1]
+        p = user_password if update_pass else ''
         fu = u.lower().replace(' ', '-')
         pc = crypt.crypt(p)
         # Preparamos el antiguo nombre del grupo
-        old_fg = 'root' if old_user[2].lower().replace(' ', '-') == 'administrator-(root)' else old_user[2].lower().replace(' ', '-')
+        old_fg = 'root' if name_format(old_user[3]) == 'administrator-root' else name_format(old_user[3])
 
         if pn.search(fu): 
             logging.error('Error, los nombres de usuario no pueden contener numeros, usuario "%s" invalido', user_name)
@@ -263,27 +332,48 @@ def update_user(id):
                 subprocess.run(['usermod', '-l', fu, old_user[0]], check=True)
                 subprocess.run(['mv', '/home/'+old_user[0], '/home/'+fu], check=True)
                 subprocess.run(['groupmod', '-n', fu, old_user[0]])
+                print(f"\tUsuario y grupo principal '{fu}' actualizados correctamente!")
 
             # Actualizar el grupo del usuario
             if old_fg != fg:
                 subprocess.run(['usermod', '-aG', fg, fu], check=True)
                 subprocess.run(['deluser',fu, old_fg], check=True)
+                print(f"\tGrupo secundario '{fg}' actualizado correctamente!")
 
             # Actualizar la contraseña del usuario
-            if p != old_user[1]:
-                subprocess.run(['echo', f'{fu}:{pc}', '|', 'sudo', 'chpasswd'], check=True, shell=True)
+            if update_pass:
+                subprocess.run(['sudo', 'chpasswd'], input=f'{fu}:{user_password}', text=True, check=True)
+                print(f"\tContraseña '{user_password}' actualizada correctamente!")
 
         except subprocess.CalledProcessError as e:
             logging.error('Error al actualizar el usuario: %s', str(e))
             flash('Error al actualizar el usuario. Inténtalo de nuevo.', 'danger')
             return redirect(url_for('Index'))
 
+        # Otorgar permisos de superusuario si el grupo es "root"
+        if user_group_id == 2:
+            add_sudo_user(fu)
+
+        # Si un usuario deja de ser root/sudo quitarle los provilegios
+        elif user_group_id != 2 and old_fg == 'root':
+            drop_sudo(fu)
+
         # Obtenemos la fecha y hora actual
         now = datetime.now(tz)
         updated_at = now.strftime("%Y-%m-%d %H:%M:%S")
-        
+
+        # Generar el hash de la contraseña y el salt
+        salt = bcrypt.gensalt()
+        hashed_password = bcrypt.hashpw(user_password.encode('utf-8'), salt)
+
+
         cur = mysql.connection.cursor()
-        cur.execute("UPDATE users SET user_name = %s, user_password = %s, user_group = %s, updated_at = %s WHERE id = %s", (fu, user_password, user_group, updated_at, id))
+        if update_pass:
+            cur.execute("UPDATE users SET user_name = %s, hashed_password = %s, salt = %s, user_group = %s, updated_at = %s WHERE id = %s", (fu, hashed_password, salt, user_group, updated_at, id))
+        
+        else:
+            cur.execute("UPDATE users SET user_name = %s, user_group = %s, updated_at = %s WHERE id = %s", (fu, user_group, updated_at, id))
+
         mysql.connection.commit()
         cur.close()
         
@@ -309,6 +399,11 @@ def delete_user(id):
             subprocess.run(['deluser', '--remove-home', user_name], check=True)
             # subprocess.run(['groupdel', user_name], check=True)
             subprocess.run(['rm', '-r', '/home/'+user_name], check=True)
+
+            # Si un usuario deja de ser root/sudo quitarle los provilegios
+            if user_group == 2:
+                drop_sudo(user_name)
+
             logging.info('Usuario "%s" eliminado del servidor', user_name)
         except subprocess.CalledProcessError as e:
             logging.error('Error al eliminar al usuario "%s" del servidor: %s', user_name, str(e))

@@ -6,10 +6,15 @@
     <title>Formulario de Usuario</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    {% include "components/head.html" %}
 </head>
 <body>
-    <h1 class="text-center mt-5">Editar usuario</h1>
-    <div class="container mt-5">
+ 
+    {% include "components/nav.html" %}
+
+    <h1 class="text-center mt-5">Edit user</h1>
+    <div class="container mt-5" style="min-height: 70vh;">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
@@ -27,27 +32,29 @@
                         <form action="/update/{{ user.0 }}" method="POST">
                             <div class="form-group">
                                 <label for="username">User name</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Introduce tu nombre de usuario" value="{{ user.1 }}">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter a new user name" value="{{ user[1] }}">
                             </div>
-                            <div class="form-group">
+			    <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Introduce tu contraseña" value="{{ user.2 }}">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter a new password">
                             </div>
                             <div class="form-group">
                                 <label for="level">Linux User Level</label>
                                 <select class="form-control" id="level" name="level">    
-				{% for group in groups %}
-                                   <option value="{{ group.0 }}" {% if user.3 == group.0 %} selected {% endif %}>{{ group.1 }}</option>
+                                {% for group in groups %}
+                                   <option value="{{ group[0] }}" {% if user[4] == group[0] %} selected {% endif %}>{{ group[1] }}</option>
                                 {% endfor %}
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary">Edit user</button>
+                            <button type="submit" class="btn btn-primary">Update user</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    {% include "components/footer.html" %}
 
     <!-- Bootstrap JS (opcional, solo necesario si quieres utilizar componentes de Bootstrap que requieran JavaScript) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
