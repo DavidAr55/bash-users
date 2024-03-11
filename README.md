@@ -22,7 +22,7 @@ As mentioned earlier, this project was created purely for demonstrative purposes
 
 **Client:** Bootstrap 5, JQuery, FontAwesom, Chart.js
 
-**Server:** Python, Flask, MySql, Ajax, Bcrypt, Subprocess
+**Server:** Python, Flask, MySql, Bash, Virtualenv, Ajax, Bcrypt, Subprocess
 
 
 ## FAQ
