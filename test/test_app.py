@@ -2,19 +2,19 @@ import pytest
 
 from src.app import name_format, add_sudo_user, drop_sudo
 
-# Probar nombres
+# Test name formatting
 @pytest.mark.parametrize(
     "name, expected",
     [
-        ("", ""),                                         # Cadena vacía
-        ("John-Doe", "john-doe"),                         # Nombre normal con guion
-        ("J0hnD03", "jhnd"),                              # Nombre con números
-        ("Léopoldo Álvarez", "lopoldo-lvarez"),           # Nombre con caracteres especiales y acentos
-        ("Mr. T", "mr-t"),                                # Nombre con punto
-        ("The Quick Brown Fox", "the-quick-brown-fox"),   # Nombre con mayúsculas
-        ("Çağatay Ünlüoğlu", "aatay-nlolu"),              # Nombre con caracteres Unicode
-        ("Isaac Newton", "isaac-newton"),                 # Nombre con espacio
-        ("Captain Jack Sparrow", "captain-jack-sparrow"), # Nombre con título y espacio
+        ("", ""),                                         # Empty string
+        ("John-Doe", "john-doe"),                         # Normal name with hyphen
+        ("J0hnD03", "jhnd"),                              # Name with numbers
+        ("Léopoldo Álvarez", "lopoldo-lvarez"),           # Name with special characters and accents
+        ("Mr. T", "mr-t"),                                # Name with period
+        ("The Quick Brown Fox", "the-quick-brown-fox"),   # Name with uppercase
+        ("Çağatay Ünlüoğlu", "aatay-nlolu"),              # Name with Unicode characters
+        ("Isaac Newton", "isaac-newton"),                 # Name with space
+        ("Captain Jack Sparrow", "captain-jack-sparrow"), # Title case name with space
     ]
 )
 
