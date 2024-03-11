@@ -38,6 +38,37 @@ The "terminal" view shows us an input where everything we execute there is done 
 #### How can I view the performance and activity of the server?
 
 In the "resources" and "logs" views, we can see the server's resource usage and at the same time textual outputs such as warnings or actions that have been performed.
+
+
+## Terminal
+
+The terminal input in the 'terminal' view works by sending input to the server terminal as follows: 'command' + Enter.
+In the following example, we will run a bash script to display the users on the server with their respective groups:
+
+```bash
+  for user in $(cut -d: -f1 /etc/passwd); do groups $user; done
+```
+
+Alternatively, we can run the same script stored at the following path to view the users and groups:
+
+```bash
+  ./bash/show-users-and-groups.sh
+```
+
+### Output:
+```bash
+  root : root
+  a21110121 : a21110121 adm dip video plugdev
+  alondra : alondra guest-user
+  hector-in : hector-in guest-user
+  ihector : ihector standard-user
+  test-user : test-user standard-user
+  benjamin-cor : benjamin-cor guest-user
+  david : david guest-user
+  david-root : david-root root sudo
+```
+
+
 ## Internal usage/Examples
 
 In this section, I show how I added users in bash from Python using "subprocess".
@@ -82,7 +113,7 @@ def add_sudo_user(user_name):
 
 In the "resources" view, we can visualize the server's resource performance: (CPU Usage, Memory Usage, Disk Usage, Network Traffic In, Network Traffic Out). Using Ajax to query the database for saved resources and displaying them with Chart.js.
 
-![Alt Text](https://davidloera-flask.info/static/server-resources.gif)
+![server-resources](https://davidloera-flask.info/static/server-resources.gif)
 ## Author
 
 - [@DavidAr55](https://www.github.com/DavidAr55)
