@@ -2900,3 +2900,129 @@ ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
 2024-03-10 21:12:58,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:12:58] "GET /resources/ajax HTTP/1.1" 200 -
 2024-03-10 21:13:08,984 - INFO - 187.189.248.248 - - [11/Mar/2024 03:13:08] "GET /resources/ajax HTTP/1.1" 200 -
 2024-03-10 21:13:18,075 - INFO - 187.189.248.248 - - [11/Mar/2024 03:13:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:18:39,043 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:443
+ * Running on https://10.138.0.3:443
+2024-03-10 21:18:39,043 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-10 21:18:39,043 - INFO -  * Restarting with stat
+2024-03-10 21:18:39,198 - WARNING -  * Debugger is active!
+2024-03-10 21:18:39,199 - INFO -  * Debugger PIN: 913-545-756
+2024-03-10 21:18:39,394 - INFO - 187.189.248.248 - - [11/Mar/2024 03:18:39] "GET /static/logo-flask-app.png HTTP/1.1" 200 -
+2024-03-10 21:18:39,465 - INFO - 187.189.248.248 - - [11/Mar/2024 03:18:39] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:18:47,860 - INFO - 140.82.115.104 - - [11/Mar/2024 03:18:47] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:18:47,969 - INFO - 140.82.115.30 - - [11/Mar/2024 03:18:47] "[36mGET /static/logo-flask-app.png HTTP/1.1[0m" 304 -
+2024-03-10 21:18:47,975 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:18:48,858 - INFO - 187.189.248.248 - - [11/Mar/2024 03:18:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:18:58,634 - INFO - 140.82.115.43 - - [11/Mar/2024 03:18:58] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:18:58,748 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:18:58,995 - INFO - 187.189.248.248 - - [11/Mar/2024 03:18:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:19:08,984 - INFO - 187.189.248.248 - - [11/Mar/2024 03:19:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:19:18,987 - INFO - 187.189.248.248 - - [11/Mar/2024 03:19:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:19:19,101 - INFO - 140.82.115.80 - - [11/Mar/2024 03:19:19] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:19:19,214 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:19:28,996 - INFO - 187.189.248.248 - - [11/Mar/2024 03:19:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:19:39,089 - INFO - 187.189.248.248 - - [11/Mar/2024 03:19:39] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:19:48,988 - INFO - 187.189.248.248 - - [11/Mar/2024 03:19:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:19:58,994 - INFO - 187.189.248.248 - - [11/Mar/2024 03:19:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:20:08,985 - INFO - 187.189.248.248 - - [11/Mar/2024 03:20:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:20:18,985 - INFO - 187.189.248.248 - - [11/Mar/2024 03:20:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:20:28,989 - INFO - 187.189.248.248 - - [11/Mar/2024 03:20:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:20:38,994 - INFO - 187.189.248.248 - - [11/Mar/2024 03:20:38] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:20:48,993 - INFO - 187.189.248.248 - - [11/Mar/2024 03:20:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:20:58,989 - INFO - 187.189.248.248 - - [11/Mar/2024 03:20:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:21:08,996 - INFO - 187.189.248.248 - - [11/Mar/2024 03:21:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:21:17,077 - INFO - 140.82.115.158 - - [11/Mar/2024 03:21:17] "[36mGET /static/logo-flask-app.png HTTP/1.1[0m" 304 -
+2024-03-10 21:21:17,158 - INFO - 140.82.115.244 - - [11/Mar/2024 03:21:17] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:21:17,272 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:21:18,990 - INFO - 187.189.248.248 - - [11/Mar/2024 03:21:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:21:22,278 - INFO - 140.82.115.80 - - [11/Mar/2024 03:21:22] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:21:22,391 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:21:28,988 - INFO - 187.189.248.248 - - [11/Mar/2024 03:21:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:22:21,001 - INFO - 187.189.248.248 - - [11/Mar/2024 03:22:21] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:23:21,006 - INFO - 187.189.248.248 - - [11/Mar/2024 03:23:21] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:24:20,997 - INFO - 187.189.248.248 - - [11/Mar/2024 03:24:20] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:25:21,128 - INFO - 187.189.248.248 - - [11/Mar/2024 03:25:21] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:26:04,435 - INFO - 187.189.248.248 - - [11/Mar/2024 03:26:04] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:26:06,613 - INFO - 187.189.248.248 - - [11/Mar/2024 03:26:06] "GET /terminal HTTP/1.1" 200 -
+2024-03-10 21:26:08,494 - INFO - 187.189.248.248 - - [11/Mar/2024 03:26:08] "POST /execute/bash/command HTTP/1.1" 200 -
