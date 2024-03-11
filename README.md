@@ -113,7 +113,8 @@ def add_sudo_user(user_name):
 
 In the "resources" view, we can visualize the server's resource performance: (CPU Usage, Memory Usage, Disk Usage, Network Traffic In, Network Traffic Out). Using Ajax to query the database for saved resources and displaying them with Chart.js.
 
-![server-resources](https://davidloera-flask.info/static/server-resources.gif)
+![server-resources](https://github.com/DavidAr55/bash-users/assets/78278095/08e0aae4-92bf-4ed8-9d90-56e6bb6ee58b)
+
 ## Author
 
 - [@DavidAr55](https://www.github.com/DavidAr55)
