@@ -2778,3 +2778,121 @@
 2024-03-10 21:00:08,239 - INFO - 187.189.248.248 - - [11/Mar/2024 03:00:08] "GET /resources/ajax HTTP/1.1" 200 -
 2024-03-10 21:00:18,984 - INFO - 187.189.248.248 - - [11/Mar/2024 03:00:18] "GET /resources/ajax HTTP/1.1" 200 -
 2024-03-10 21:00:28,984 - INFO - 187.189.248.248 - - [11/Mar/2024 03:00:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:00:38,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:00:38] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:00:48,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:00:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:00:58,983 - INFO - 187.189.248.248 - - [11/Mar/2024 03:00:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:01:08,725 - INFO - 187.189.248.248 - - [11/Mar/2024 03:01:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:01:18,974 - INFO - 187.189.248.248 - - [11/Mar/2024 03:01:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:01:27,495 - INFO - 140.82.115.44 - - [11/Mar/2024 03:01:27] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:01:27,555 - INFO - 140.82.115.43 - - [11/Mar/2024 03:01:27] "GET /static/logo-flask-app.png HTTP/1.1" 200 -
+2024-03-10 21:01:27,617 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:01:28,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:01:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:01:38,975 - INFO - 187.189.248.248 - - [11/Mar/2024 03:01:38] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:01:48,987 - INFO - 187.189.248.248 - - [11/Mar/2024 03:01:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:01:57,656 - INFO - 140.82.115.27 - - [11/Mar/2024 03:01:57] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:01:57,770 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:01:58,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:01:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:02:08,975 - INFO - 187.189.248.248 - - [11/Mar/2024 03:02:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:02:18,985 - INFO - 187.189.248.248 - - [11/Mar/2024 03:02:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:03:19,992 - INFO - 187.189.248.248 - - [11/Mar/2024 03:03:19] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:03:36,103 - INFO - 187.189.248.248 - - [11/Mar/2024 03:03:36] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:03:38,067 - INFO - 187.189.248.248 - - [11/Mar/2024 03:03:38] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:03:49,082 - INFO - 187.189.248.248 - - [11/Mar/2024 03:03:49] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:03:58,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:03:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:04:08,984 - INFO - 187.189.248.248 - - [11/Mar/2024 03:04:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:04:18,979 - INFO - 187.189.248.248 - - [11/Mar/2024 03:04:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:04:28,979 - INFO - 187.189.248.248 - - [11/Mar/2024 03:04:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:05:20,984 - INFO - 187.189.248.248 - - [11/Mar/2024 03:05:20] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:05:26,672 - INFO - 140.82.115.80 - - [11/Mar/2024 03:05:26] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:05:26,732 - INFO - 140.82.115.43 - - [11/Mar/2024 03:05:26] "[36mGET /static/logo-flask-app.png HTTP/1.1[0m" 304 -
+2024-03-10 21:05:26,786 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:05:31,429 - INFO - 187.189.248.248 - - [11/Mar/2024 03:05:31] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:05:38,983 - INFO - 187.189.248.248 - - [11/Mar/2024 03:05:38] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:05:48,982 - INFO - 187.189.248.248 - - [11/Mar/2024 03:05:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:05:49,879 - INFO - 140.82.115.250 - - [11/Mar/2024 03:05:49] "GET /static/server-resources.gif HTTP/1.1" 200 -
+2024-03-10 21:05:49,992 - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 326, in execute
+    write(data)
+  File "/home/a21110121/bash-users/env/lib/python3.11/site-packages/werkzeug/serving.py", line 301, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.11/ssl.py", line 1241, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1210, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2393)
+2024-03-10 21:05:58,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:05:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:06:08,057 - INFO - 187.189.248.248 - - [11/Mar/2024 03:06:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:06:18,980 - INFO - 187.189.248.248 - - [11/Mar/2024 03:06:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:06:28,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:06:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:06:38,977 - INFO - 187.189.248.248 - - [11/Mar/2024 03:06:38] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:06:48,979 - INFO - 187.189.248.248 - - [11/Mar/2024 03:06:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:06:58,988 - INFO - 187.189.248.248 - - [11/Mar/2024 03:06:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:07:08,978 - INFO - 187.189.248.248 - - [11/Mar/2024 03:07:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:07:20,979 - INFO - 187.189.248.248 - - [11/Mar/2024 03:07:20] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:08:20,986 - INFO - 187.189.248.248 - - [11/Mar/2024 03:08:20] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:09:21,120 - INFO - 187.189.248.248 - - [11/Mar/2024 03:09:21] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:10:21,011 - INFO - 187.189.248.248 - - [11/Mar/2024 03:10:21] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:11:20,986 - INFO - 187.189.248.248 - - [11/Mar/2024 03:11:20] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:11:36,323 - INFO - 187.189.248.248 - - [11/Mar/2024 03:11:36] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:11:38,993 - INFO - 187.189.248.248 - - [11/Mar/2024 03:11:38] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:11:48,988 - INFO - 187.189.248.248 - - [11/Mar/2024 03:11:48] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:11:58,990 - INFO - 187.189.248.248 - - [11/Mar/2024 03:11:58] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:12:08,987 - INFO - 187.189.248.248 - - [11/Mar/2024 03:12:08] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:12:18,984 - INFO - 187.189.248.248 - - [11/Mar/2024 03:12:18] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:12:28,070 - INFO - 187.189.248.248 - - [11/Mar/2024 03:12:28] "GET /resources/ajax HTTP/1.1" 200 -
+2024-03-10 21:12:38,990 - INFO - 187.189.248.248 - - [11/Mar/2024 03:12:38] "GET /resources/ajax HTTP/1.1" 200 -
